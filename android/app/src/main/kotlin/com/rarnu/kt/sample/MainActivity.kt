@@ -10,6 +10,7 @@ import com.rarnu.kt.android.*
 class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        UI.init(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -33,7 +34,8 @@ class MainActivity : Activity() {
         testFile()
         testCommand()
 
-
+        val a = 100.dip2px()
+        Log.e("UI", "a => $a")
     }
 
     private fun testZip() {
