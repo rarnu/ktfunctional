@@ -35,7 +35,7 @@ class MainActivity : Activity() {
         testCommand()
 
         val a = 100.dip2px()
-        Log.e("UI", "a => $a")
+
     }
 
     private fun testZip() {
