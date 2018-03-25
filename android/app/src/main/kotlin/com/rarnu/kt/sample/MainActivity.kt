@@ -5,9 +5,7 @@ import android.app.Activity
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
-import com.rarnu.kt.android.dip2px
-import com.rarnu.kt.android.fileIO
-import com.rarnu.kt.android.runCommand
+import com.rarnu.kt.android.*
 
 class MainActivity : Activity() {
 
@@ -34,7 +32,6 @@ class MainActivity : Activity() {
     private fun test() {
         testFile()
         testCommand()
-        val a = 100.dip2px()
 
 
     }
