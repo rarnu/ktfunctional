@@ -52,7 +52,7 @@ private object DownloadOperations {
             val ins = con.inputStream
             filesize = con.contentLength
             handle?.invoke(DownloadState.WHAT_DOWNLOAD_START, position, filesize, null)
-            val fileOut = File(localFile + ".tmp")
+            val fileOut = File("$localFile.tmp")
             if (fileOut.exists()) {
                 fileOut.delete()
             }

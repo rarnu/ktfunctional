@@ -9,7 +9,7 @@ import java.io.FileOutputStream
 
 fun getBitmapFromAssets(ctx: Context, path: String) = BitmapFactory.decodeStream(ctx.resources.assets.open(path))
 
-fun Bitmap.toRoundCorner(radis: Float): Bitmap {
+fun Bitmap.roundCorner(radis: Float): Bitmap {
     val output = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
     val canvas = Canvas(output)
     val paint = Paint()
@@ -24,7 +24,7 @@ fun Bitmap.toRoundCorner(radis: Float): Bitmap {
     return output
 }
 
-fun Bitmap.toBlackWhite(): Bitmap = colorMatrix(floatArrayOf(
+fun Bitmap.blackWhite(): Bitmap = colorMatrix(floatArrayOf(
         0.308f, 0.609f, 0.082f, 0.0f, 0.0f,
         0.308f, 0.609f, 0.082f, 0.0f, 0.0f,
         0.308f, 0.609f, 0.082f, 0.0f, 0.0f,
@@ -115,7 +115,7 @@ fun Bitmap.reflect(refHeight: Float): Bitmap {
     return reflectionBitmap
 }
 
-fun Bitmap.saveToFile(filename: String, format: Bitmap.CompressFormat = Bitmap.CompressFormat.PNG) {
+fun Bitmap.save(filename: String, format: Bitmap.CompressFormat = Bitmap.CompressFormat.PNG) {
     val f = File(filename)
     f.createNewFile()
     val fOut = FileOutputStream(f)
@@ -125,7 +125,7 @@ fun Bitmap.saveToFile(filename: String, format: Bitmap.CompressFormat = Bitmap.C
 }
 
 
-fun Drawable.toBitmap(): Bitmap {
+fun Drawable.bitmap(): Bitmap {
     val config = if (opacity != PixelFormat.OPAQUE) {
         Bitmap.Config.ARGB_8888
     } else {
@@ -144,5 +144,5 @@ fun Drawable.scale(newWidth: Float, newHeight: Float): Drawable {
     val sy = newHeight / intrinsicHeight
     matrix.postScale(sx, sy)
     @Suppress("DEPRECATION")
-    return BitmapDrawable(Bitmap.createBitmap(toBitmap(), 0, 0, intrinsicWidth, intrinsicHeight, matrix, true))
+    return BitmapDrawable(Bitmap.createBitmap(bitmap(), 0, 0, intrinsicWidth, intrinsicHeight, matrix, true))
 }

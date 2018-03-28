@@ -14,7 +14,7 @@ class ZipUtils {
     var srcPath = ""
     var destPath = ""
     val filterList = mutableListOf<String>()
-    internal var _success: () -> Unit = {}
+    internal var _success: () -> Unit = { }
     internal var _error: (String?) -> Unit = { _ -> }
 
     fun success(onSuccess: () -> Unit) {

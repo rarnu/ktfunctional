@@ -6,6 +6,10 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
 import com.rarnu.kt.android.*
+import java.io.BufferedOutputStream
+import java.io.ByteArrayInputStream
+import java.io.ByteArrayOutputStream
+import java.io.DataOutputStream
 
 class MainActivity : Activity() {
 
@@ -89,6 +93,16 @@ class MainActivity : Activity() {
                 } else {
                     Log.e("FILEIO", "COPY FAIL => $errMsg")
                 }
+            }
+        }
+        val dis = ByteArrayInputStream(byteArrayOf(1,2,3,4,5,6,7,8,9,10))
+        val dos = ByteArrayOutputStream()
+        fileIO {
+            src = dis
+            dest = dos
+            result { status, text, errMsg ->
+                val s = dos.size()
+                print(s)
             }
         }
     }
