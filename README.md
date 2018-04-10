@@ -4,16 +4,6 @@ a functional library for kotlin(android)
 #### Using in Android
 
 ```
-repositories {
-    ... ...
-    mavenLocal()
-    maven {
-        url "https://oss.sonatype.org/service/local/repositories/releases/content"
-    }
-}
-```
-
-```
 compile "com.github.rarnu:ktfunctional:0.1.0"
 ```
 
