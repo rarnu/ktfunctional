@@ -22,7 +22,6 @@ class Assets {
     }
 }
 
-
 fun assetsIOAsync(init: Assets.() -> Unit) = thread { assetsIO(init) }
 
 fun assetsIO(init: Assets.() -> Unit) {

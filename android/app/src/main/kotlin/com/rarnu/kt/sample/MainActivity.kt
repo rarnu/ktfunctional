@@ -5,6 +5,7 @@ import android.app.Activity
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import com.rarnu.kt.android.*
 import java.io.BufferedOutputStream
 import java.io.ByteArrayInputStream
@@ -17,6 +18,7 @@ class MainActivity : Activity() {
         UI.init(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
                 checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
@@ -35,10 +37,12 @@ class MainActivity : Activity() {
     }
 
     private fun test() {
+
         testFile()
         testCommand()
 
         val a = 100.dip2px()
+        val b = 1.dip2px()
 
     }
 
@@ -47,11 +51,20 @@ class MainActivity : Activity() {
     }
 
     private fun testUnzip() {
+        "".toEditable()
 
     }
 
     private fun testHttpRequest() {
+        httpAsync {
+            url = ""
+            getParam = ""
+            onSuccess { _, _, _ ->
+                runOnUiThread {
 
+                }
+            }
+        }
     }
 
     private fun testDownload() {
