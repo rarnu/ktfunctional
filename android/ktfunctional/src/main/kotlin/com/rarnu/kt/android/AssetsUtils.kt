@@ -9,7 +9,6 @@ import java.io.OutputStream
 import kotlin.concurrent.thread
 
 class Assets {
-    var context: Context? = null
     var src: String? = null
     /**
      * dest can be path(String), file(File), stream(OutputStream)
@@ -22,12 +21,12 @@ class Assets {
     }
 }
 
-fun assetsIOAsync(init: Assets.() -> Unit) = thread { assetsIO(init) }
+fun Context.assetsIOAsync(init: Assets.() -> Unit) = thread { assetsIO(init) }
 
-fun assetsIO(init: Assets.() -> Unit) {
+fun Context.assetsIO(init: Assets.() -> Unit) {
     val a = Assets()
     a.init()
-    AssetsOperations.assetsIO(a.context, a.src, a.dest, a.isDestText, a._result)
+    AssetsOperations.assetsIO(this, a.src, a.dest, a.isDestText, a._result)
 }
 
 private object AssetsOperations {

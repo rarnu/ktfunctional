@@ -15,7 +15,7 @@ import java.io.DataOutputStream
 class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        UI.init(this)
+        initUI()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -27,6 +27,7 @@ class MainActivity : Activity() {
         } else {
             test()
         }
+
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>?, grantResults: IntArray?) {

@@ -8,7 +8,7 @@ import android.app.Activity
 
 fun String.toEditable(): Editable = Editable.Factory().newEditable(this)
 
-fun toast(ctx: Context, message: String) = Toast.makeText(ctx, message, Toast.LENGTH_SHORT).show()
+fun Context.toast(message: String) = Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
 fun Activity.v(resId: Int) = findViewById(resId)
 

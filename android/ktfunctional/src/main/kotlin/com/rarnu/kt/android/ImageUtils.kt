@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable
 import java.io.File
 import java.io.FileOutputStream
 
-fun getBitmapFromAssets(ctx: Context, path: String) = BitmapFactory.decodeStream(ctx.resources.assets.open(path))
+fun Context.getBitmapFromAssets(path: String) = BitmapFactory.decodeStream(resources.assets.open(path))
 
 fun Bitmap.roundCorner(radis: Float): Bitmap {
     val output = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
