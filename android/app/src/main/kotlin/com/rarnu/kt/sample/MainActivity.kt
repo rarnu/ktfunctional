@@ -5,12 +5,9 @@ import android.app.Activity
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import com.rarnu.kt.android.*
-import java.io.BufferedOutputStream
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
-import java.io.DataOutputStream
 
 class MainActivity : Activity() {
 
@@ -18,7 +15,6 @@ class MainActivity : Activity() {
         initUI()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
                 checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
@@ -45,6 +41,13 @@ class MainActivity : Activity() {
         val a = 100.dip2px()
         val b = 1.dip2px()
 
+        testurl("https://www.baidu.com:1234/uri/suburi?p1=a&p2=b")
+        testurl("https://www.baidu.com:1234/uri/suburi?p1=&p2=b")
+        testurl("https://www.baidu.com/uri/suburi?p1=a&p2=b")
+        testurl("https://www.baidu.com:1234/suburi")
+        testurl("https://www.baidu.com")
+        testurl("www.baidu.com:1234")
+        testurl("www.baidu.com")
     }
 
     private fun testZip() {
@@ -118,6 +121,14 @@ class MainActivity : Activity() {
                 val s = dos.size()
                 print(s)
             }
+        }
+    }
+
+    private fun testurl(url: String) {
+        val info = decodeUrl(url)
+        Log.e("URL", "info => protocol: ${info.proto}, port: ${info.port}, host: ${info.host}, uri: ${info.uri}")
+        for((k, v) in info.params) {
+            Log.e("URL", "k: $k, v: $v")
         }
     }
 }
