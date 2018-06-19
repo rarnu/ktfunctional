@@ -5,8 +5,8 @@ apply plugin: 'maven'
 apply plugin: 'signing'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -31,7 +31,7 @@ project.gradle.startParameter.excludedTaskNames.add('prepareDebugUnitTestDepende
 project.gradle.startParameter.excludedTaskNames.add('generateDebugAndroidTestSources')
 
 group = 'com.github.rarnu'
-version = '0.1.4'
+version = '0.1.7'
 
 signing {
     sign configurations.archives

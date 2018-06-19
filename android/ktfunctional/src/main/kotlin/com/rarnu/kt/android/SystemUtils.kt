@@ -18,13 +18,13 @@ private object SystemOperations {
         var ret = false
         if (context.checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED) {
             val tm = context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
-            val imei = tm.deviceId
+            val imei = if (Build.VERSION.SDK_INT >= 26) tm.imei else ""
             if (imei != null && imei == "000000000000000") {
                 ret = true
             }
         }
 
-        if (Build.SERIAL == "" || Build.PRODUCT.contains("sdk")) {
+        if ((if (Build.VERSION.SDK_INT >= 26) Build.getSerial() else "") == "" || Build.PRODUCT.contains("sdk")) {
             ret = true
         }
         if (!ret) {

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.rarnu.kt.sample">
 
-    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="25"/>
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="26"/>
 
     <application
             android:allowBackup="true"
