@@ -1,92 +1,25 @@
 package com.rarnu.kt.sample
 
-import android.Manifest
-import android.app.Activity
-import android.content.pm.PackageManager
 import android.os.Bundle
+import android.preference.Preference
 import android.util.Log
 import com.rarnu.kt.android.*
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 
-class MainActivity : Activity() {
+class MainActivity : PreferenceActivity(), Preference.OnPreferenceClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         initUI()
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
-                checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
-                checkSelfPermission(Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.READ_PHONE_STATE), 0)
-        } else {
-            test()
-        }
-
+        showActionBack()
     }
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>?, grantResults: IntArray?) {
-        val canTest = grantResults?.all { it == PackageManager.PERMISSION_GRANTED } ?: return
-        if (canTest) {
-            test()
-        }
-    }
+    override fun getPreferenceXml() = R.xml.settings
 
-    private fun test() {
-
-        testFile()
-        testCommand()
-
-        val a = 100.dip2px()
-        val b = 1.dip2px()
-
-        testurl("https://www.baidu.com:1234/uri/suburi?p1=a&p2=b")
-        testurl("https://www.baidu.com:1234/uri/suburi?p1=&p2=b")
-        testurl("https://www.baidu.com/uri/suburi?p1=a&p2=b")
-        testurl("https://www.baidu.com:1234/suburi")
-        testurl("https://www.baidu.com")
-        testurl("www.baidu.com:1234")
-        testurl("www.baidu.com")
-    }
-
-    private fun testZip() {
-
-    }
-
-    private fun testUnzip() {
-        "".toEditable()
-
-    }
-
-    private fun testHttpRequest() {
-        httpAsync {
-            url = ""
-            getParam = ""
-            onSuccess { _, _, _ ->
-                runOnUiThread {
-
-                }
-            }
-        }
-    }
-
-    private fun testDownload() {
-
-    }
-
-    private fun testCommand() {
-        runCommand {
-            commands.add("ls")
-            commands.add("/sdcard/")
-            result { output, error ->
-                Log.e("COMMAND", "output => $output, error => $error")
-            }
-        }
-    }
-
-    private fun testPackageParser() {
-
+    override fun onPreparedPreference() {
+        val p = pref("key1")
+        p?.onPreferenceClickListener = this
     }
 
     private fun testFile() {
@@ -130,5 +63,10 @@ class MainActivity : Activity() {
         for((k, v) in info.params) {
             Log.e("URL", "k: $k, v: $v")
         }
+    }
+
+    override fun onPreferenceClick(preference: Preference?): Boolean {
+        Log.e("PREF_CLICK", preference?.key)
+        return true
     }
 }

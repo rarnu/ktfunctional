@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Category 1">
+        <Preference android:title="key1" android:key="key1"/>
+        <Preference android:title="key2" android:key="key2"/>
+        <Preference android:title="key3" android:key="key3"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Category 2">
+        <Preference android:title="key4" android:key="key4"/>
+        <Preference android:title="key5" android:key="key5"/>
+        <Preference android:title="key6" android:key="key6"/>
+    </PreferenceCategory>
+</PreferenceScreen>
