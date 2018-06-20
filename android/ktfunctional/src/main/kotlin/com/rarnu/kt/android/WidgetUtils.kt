@@ -37,12 +37,13 @@ fun Context.resDrawable(resId: Int) = resources.getDrawable(resId, theme)
  * H: Holder Class
  */
 @Suppress("UNCHECKED_CAST")
-abstract class BaseAdapter<T, H>(context: Context, protected var list: MutableList<T>) : BaseAdapter(), Filterable {
+abstract class BaseAdapter<T, H>(ctx: Context, protected var list: MutableList<T>) : BaseAdapter(), Filterable {
 
     protected val lock = Any()
-    private var inflater: LayoutInflater = LayoutInflater.from(context)
+    private var inflater: LayoutInflater = LayoutInflater.from(ctx)
     protected lateinit var listFull: MutableList<T>
     private var _filter = ArrayFilter()
+    protected val context = ctx
 
     open fun setNewList(list: MutableList<T>) {
         this.listFull = list
