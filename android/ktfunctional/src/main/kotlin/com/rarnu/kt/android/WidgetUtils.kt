@@ -77,7 +77,7 @@ abstract class BaseAdapter<T, H>(ctx: Context, protected var list: MutableList<T
 
     abstract fun newHolder(baseView: View): H
 
-    abstract fun fillHolder(baseVew: View, holder: H, item: T)
+    abstract fun fillHolder(baseVew: View, holder: H, item: T, position: Int)
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         var v = convertView
@@ -90,7 +90,7 @@ abstract class BaseAdapter<T, H>(ctx: Context, protected var list: MutableList<T
             v.tag = holder
         }
         val item = list[position]
-        fillHolder(v, holder!!, item)
+        fillHolder(v, holder!!, item, position)
         return v
     }
 

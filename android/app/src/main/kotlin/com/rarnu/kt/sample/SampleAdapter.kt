@@ -11,7 +11,7 @@ class SampleAdapter(context: Context, list: MutableList<String>) : BaseAdapter<S
 
     override fun newHolder(baseView: View) = SampleHolder()
 
-    override fun fillHolder(baseVew: View, holder: SampleHolder, item: String) {
+    override fun fillHolder(baseVew: View, holder: SampleHolder, item: String, position: Int) {
 
     }
 
