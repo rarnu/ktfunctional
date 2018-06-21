@@ -37,31 +37,31 @@
     <session id="-1577160142">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="7" />
-          <entry key="kt" value="1404" />
+          <entry key="gradle" value="12" />
+          <entry key="kt" value="1556" />
           <entry key="xml" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="7" />
-          <entry key="Kotlin" value="1404" />
+          <entry key="Groovy" value="12" />
+          <entry key="Kotlin" value="1556" />
           <entry key="XML" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="3" />
-          <entry key="java" value="5" />
-          <entry key="kt" value="8" />
+          <entry key="gradle" value="4" />
+          <entry key="java" value="6" />
+          <entry key="kt" value="10" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="5" />
-          <entry key="Kotlin" value="8" />
+          <entry key="Groovy" value="4" />
+          <entry key="JAVA" value="6" />
+          <entry key="Kotlin" value="10" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
@@ -72,29 +72,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ktfunctional/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            <state relative-caret-position="450">
+              <caret line="30" column="51" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ActivityUtils.kt">
+        <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/Command.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-              <folding>
-                <element signature="e#30#237#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Develop/android-sdk/sources/android-26/android/app/Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="3581" column="19" selection-start-line="3581" selection-start-column="19" selection-end-line="3581" selection-end-column="19" />
+            <state relative-caret-position="345">
+              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -102,11 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              <folding>
-                <element signature="e#29#305#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -114,20 +99,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/WidgetUtils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+            <state relative-caret-position="30">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Develop/android-sdk/sources/android-26/android/view/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313680">
+              <caret line="21502" column="58" selection-start-line="21502" selection-start-column="58" selection-end-line="21502" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
             </state>
           </provider>
+          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -150,12 +144,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/settings.xml">
-          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="58" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="58" />
             </state>
           </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -2418,12 +2412,12 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="9149157753000" />
+        <entry key="$PROJECT_DIR$" value="9149238087000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/app/build.gradle" value="2960768369" />
         <entry key="$PROJECT_DIR$/build.gradle" value="727489951" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="3551751050" />
-        <entry key="$PROJECT_DIR$/ktfunctional/build.gradle" value="3427328092" />
+        <entry key="$PROJECT_DIR$/ktfunctional/build.gradle" value="1764154817" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="763185007" />
       </map>
     </option>
@@ -3077,8 +3071,9 @@
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/SampleAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt" />
         <option value="$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ActivityUtils.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/Command.kt" />
         <option value="$PROJECT_DIR$/ktfunctional/build.gradle" />
       </list>
     </option>
@@ -3089,7 +3084,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1113" />
@@ -3109,7 +3104,10 @@
         <observation name="false" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="false" value="161.0" />
+        <observation name="false" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="false" value="12.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
@@ -3123,7 +3121,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
@@ -3138,8 +3139,11 @@
         <observation name="false" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="false" value="159.0" />
+        <observation name="false" value="160.0" />
         <observation name="true" value="2.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="false" value="12.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:nonGeneric">
@@ -3153,7 +3157,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
@@ -3172,7 +3179,11 @@
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
         <observation name="false" value="1.0" />
-        <observation name="true" value="107.0" />
+        <observation name="true" value="108.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="true" value="4.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
@@ -3194,7 +3205,11 @@
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
         <observation name="false" value="72.0" />
-        <observation name="true" value="36.0" />
+        <observation name="true" value="37.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="true" value="4.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
@@ -3215,8 +3230,12 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
-        <observation name="false" value="75.0" />
+        <observation name="false" value="76.0" />
         <observation name="true" value="33.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="true" value="4.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
@@ -3237,8 +3256,12 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
-        <observation name="false" value="75.0" />
+        <observation name="false" value="76.0" />
         <observation name="true" value="33.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="true" value="4.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
@@ -3259,8 +3282,12 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
-        <observation name="false" value="42.0" />
+        <observation name="false" value="43.0" />
         <observation name="true" value="66.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="false" value="4.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:templates">
@@ -3274,7 +3301,10 @@
         <observation name="false" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="false" value="161.0" />
+        <observation name="false" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="false" value="12.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:accessible">
@@ -3288,7 +3318,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
@@ -3302,7 +3335,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:kind">
@@ -3316,7 +3352,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
@@ -3334,7 +3373,11 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
-        <observation name="unknown" value="108.0" />
+        <observation name="unknown" value="109.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="unknown" value="4.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
@@ -3356,7 +3399,11 @@
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
         <observation name="false" value="27.0" />
-        <observation name="null" value="81.0" />
+        <observation name="null" value="82.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="null" value="4.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
@@ -3374,7 +3421,11 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
-        <observation name="unknown" value="108.0" />
+        <observation name="unknown" value="109.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="unknown" value="4.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
@@ -3388,7 +3439,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="completionFinishedType">
@@ -3411,9 +3465,14 @@
         <observation name="typedSelect" value="4.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="cancelled" value="259.0" />
-        <observation name="explicitSelect" value="133.0" />
+        <observation name="cancelled" value="279.0" />
+        <observation name="explicitSelect" value="134.0" />
         <observation name="typedSelect" value="28.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="cancelled" value="15.0" />
+        <observation name="explicitSelect" value="7.0" />
+        <observation name="typedSelect" value="5.0" />
       </dailyData>
     </factor>
     <factor id="completionType">
@@ -3427,7 +3486,10 @@
         <observation name="BASIC" value="25.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="BASIC" value="217.0" />
+        <observation name="BASIC" value="220.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="BASIC" value="13.0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
@@ -3444,7 +3506,10 @@
         <observation name="count" value="40.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="count" value="420.0" />
+        <observation name="count" value="441.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="count" value="27.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
@@ -3471,7 +3536,14 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="321.0" />
+        <observation name="count" value="323.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="23.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -3501,7 +3573,14 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="321.0" />
+        <observation name="count" value="323.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="23.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -3518,7 +3597,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:nameEnd">
@@ -3532,7 +3614,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
@@ -3558,11 +3643,18 @@
         <observation name="variance" value="0.070737" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="average" value="0.080997" />
-        <observation name="count" value="321.0" />
+        <observation name="average" value="0.080495" />
+        <observation name="count" value="323.0" />
         <observation name="max" value="3.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.076381" />
+        <observation name="variance" value="0.076165" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="23.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
@@ -3588,11 +3680,18 @@
         <observation name="variance" value="3039.663436" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="average" value="-1097.087227" />
-        <observation name="count" value="321.0" />
+        <observation name="average" value="-1097.421052" />
+        <observation name="count" value="323.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-1153.0" />
-        <observation name="variance" value="32442.218776" />
+        <observation name="variance" value="32350.693699" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="average" value="-1134.73913" />
+        <observation name="count" value="23.0" />
+        <observation name="max" value="-1051.0" />
+        <observation name="min" value="-1153.0" />
+        <observation name="variance" value="797.673685" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
@@ -3618,11 +3717,18 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="average" value="3360174083854795000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.0" />
-        <observation name="count" value="321.0" />
-        <observation name="max" value="179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.0" />
+        <observation name="average" value="0.0" />
+        <observation name="count" value="1.0" />
+        <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="�" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="23.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_explicitlyImported">
@@ -3652,11 +3758,19 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
-        <observation name="average" value="95.348837" />
-        <observation name="count" value="215.0" />
+        <observation name="average" value="94.470046" />
+        <observation name="count" value="217.0" />
         <observation name="max" value="300.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="15486.155904" />
+        <observation name="variance" value="15456.108675" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="average" value="300.0" />
+        <observation name="count" value="7.0" />
+        <observation name="max" value="300.0" />
+        <observation name="min" value="300.0" />
+        <observation name="variance" value="0.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_knownElement">
@@ -3687,7 +3801,15 @@
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
         <observation name="average" value="0.0" />
-        <observation name="count" value="215.0" />
+        <observation name="count" value="217.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="average" value="0.0" />
+        <observation name="count" value="7.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -3720,11 +3842,19 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
-        <observation name="average" value="0.716279" />
-        <observation name="count" value="215.0" />
+        <observation name="average" value="0.718894" />
+        <observation name="count" value="217.0" />
         <observation name="max" value="2.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.741804" />
+        <observation name="variance" value="0.738751" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="average" value="2.0" />
+        <observation name="count" value="7.0" />
+        <observation name="max" value="2.0" />
+        <observation name="min" value="2.0" />
+        <observation name="variance" value="0.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
@@ -3755,7 +3885,15 @@
       <dailyData date="20-6-2018">
         <observation name="UNDEFINED" value="53.0" />
         <observation name="average" value="0.0" />
-        <observation name="count" value="215.0" />
+        <observation name="count" value="217.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="8.0" />
+        <observation name="average" value="0.0" />
+        <observation name="count" value="7.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -3785,7 +3923,14 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="321.0" />
+        <observation name="count" value="323.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="23.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -3814,11 +3959,18 @@
         <observation name="variance" value="6.142523" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="average" value="8.308411" />
-        <observation name="count" value="321.0" />
+        <observation name="average" value="8.306501" />
+        <observation name="count" value="323.0" />
         <observation name="max" value="26.0" />
         <observation name="min" value="1.0" />
-        <observation name="variance" value="25.224226" />
+        <observation name="variance" value="25.146424" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="average" value="8.130435" />
+        <observation name="count" value="23.0" />
+        <observation name="max" value="15.0" />
+        <observation name="min" value="3.0" />
+        <observation name="variance" value="12.764662" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
@@ -3832,7 +3984,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
@@ -3846,7 +4001,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
@@ -3860,7 +4018,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
@@ -3887,7 +4048,14 @@
       </dailyData>
       <dailyData date="20-6-2018">
         <observation name="average" value="1.0" />
-        <observation name="count" value="321.0" />
+        <observation name="count" value="323.0" />
+        <observation name="max" value="1.0" />
+        <observation name="min" value="1.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="average" value="1.0" />
+        <observation name="count" value="23.0" />
         <observation name="max" value="1.0" />
         <observation name="min" value="1.0" />
         <observation name="variance" value="0.0" />
@@ -3904,7 +4072,10 @@
         <observation name="UNDEFINED" value="18.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="UNDEFINED" value="161.0" />
+        <observation name="UNDEFINED" value="162.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="UNDEFINED" value="12.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
@@ -3930,11 +4101,18 @@
         <observation name="variance" value="13147931.539647" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="average" value="2676.068536" />
-        <observation name="count" value="321.0" />
+        <observation name="average" value="2659.498452" />
+        <observation name="count" value="323.0" />
         <observation name="max" value="10000.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="16495026.484762" />
+        <observation name="variance" value="16465923.918693" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="average" value="4734.956522" />
+        <observation name="count" value="23.0" />
+        <observation name="max" value="10000.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="15330720.05491" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
@@ -3954,9 +4132,12 @@
         <observation name="1" value="2.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="0" value="122.0" />
+        <observation name="0" value="123.0" />
         <observation name="1" value="10.0" />
         <observation name="3" value="1.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="0" value="7.0" />
       </dailyData>
     </factor>
     <factor id="mnemonicsUsage">
@@ -3973,8 +4154,12 @@
         <observation name="withMnemonics" value="6.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="total" value="123.0" />
-        <observation name="withMnemonics" value="44.0" />
+        <observation name="total" value="124.0" />
+        <observation name="withMnemonics" value="45.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="total" value="7.0" />
+        <observation name="withMnemonics" value="3.0" />
       </dailyData>
     </factor>
     <factor id="prefixLength">
@@ -4012,10 +4197,16 @@
         <observation name="2" value="25.0" />
         <observation name="3" value="28.0" />
         <observation name="4" value="20.0" />
-        <observation name="5" value="13.0" />
+        <observation name="5" value="14.0" />
         <observation name="6" value="15.0" />
         <observation name="7" value="10.0" />
         <observation name="8" value="4.0" />
+        <observation name="9" value="2.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="3" value="1.0" />
+        <observation name="4" value="2.0" />
+        <observation name="6" value="2.0" />
         <observation name="9" value="2.0" />
       </dailyData>
     </factor>
@@ -4033,8 +4224,12 @@
         <observation name="count" value="71.0" />
       </dailyData>
       <dailyData date="20-6-2018">
-        <observation name="average" value="204.045455" />
-        <observation name="count" value="462.0" />
+        <observation name="average" value="205.680673" />
+        <observation name="count" value="476.0" />
+      </dailyData>
+      <dailyData date="21-6-2018">
+        <observation name="average" value="120.131579" />
+        <observation name="count" value="38.0" />
       </dailyData>
     </factor>
   </component>
@@ -4043,8 +4238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -4157,6 +4350,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4167,7 +4362,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Develop/android-sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1529480468294" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1529559176210" />
     <property name="device.picker.selection" value="Tablet" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -4334,11 +4529,14 @@
       <workItem from="1529466331130" duration="126000" />
       <workItem from="1529475630298" duration="368000" />
       <workItem from="1529476097678" duration="4362000" />
+      <workItem from="1529481208235" duration="2416000" />
+      <workItem from="1529552261936" duration="7000" />
+      <workItem from="1529558801896" duration="521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136892000" />
+    <option name="totallyTimeSpent" value="139836000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4350,7 +4548,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1113" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1113" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.20127796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -4445,7 +4644,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt</url>
-          <line>68</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -4532,13 +4731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/Command.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ContextUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -4592,12 +4784,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ZipUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -4660,10 +4852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14115">
           <caret line="1017" column="18" selection-start-line="1017" selection-start-column="18" selection-end-line="1017" selection-end-column="18" />
-          <folding>
-            <element signature="e#39342#39343#0" expanded="true" />
-            <element signature="e#39388#39389#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4699,21 +4887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="596" column="12" selection-start-line="596" selection-start-column="12" selection-end-line="596" selection-end-column="12" />
-          <folding>
-            <element signature="e#21634#21635#0" expanded="true" />
-            <element signature="e#21669#21670#0" expanded="true" />
-            <element signature="e#21730#21731#0" expanded="true" />
-            <element signature="e#21769#21770#0" expanded="true" />
-            <element signature="e#21848#21849#0" expanded="true" />
-            <element signature="e#21901#21902#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Develop/android-sdk/sources/android-26/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="24104" column="22" selection-start-line="24104" selection-start-column="22" selection-end-line="24104" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -4721,17 +4894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
-          <folding>
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3089#3090#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/WidgetUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -4742,40 +4904,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$USER_HOME$/Develop/android-sdk/sources/android-26/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="50820">
+          <caret line="3581" column="19" selection-start-line="3581" selection-start-column="19" selection-end-line="3581" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ActivityUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <element signature="e#30#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/WidgetUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Develop/android-sdk/sources/android-26/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313680">
+          <caret line="21502" column="58" selection-start-line="21502" selection-start-column="58" selection-end-line="21502" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/SampleAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/settings.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Develop/android-sdk/sources/android-26/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="3581" column="19" selection-start-line="3581" selection-start-column="19" selection-end-line="3581" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -4786,30 +4964,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ActivityUtils.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="e#30#237#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="58" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt">
+    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/Command.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="e#29#305#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ktfunctional/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        <state relative-caret-position="450">
+          <caret line="30" column="51" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="51" />
         </state>
       </provider>
     </entry>

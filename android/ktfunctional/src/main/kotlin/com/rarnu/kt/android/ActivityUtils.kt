@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.RelativeLayout
 import android.app.Activity
+import android.preference.Preference
 
 fun Activity.showActionBack() {
     actionBar?.setDisplayOptions(0, ActionBar.DISPLAY_HOME_AS_UP)
@@ -21,6 +22,10 @@ abstract class PreferenceActivity : Activity() {
 
     fun pref(resId: Int) = frag.findPreference(getString(resId))
     fun pref(key: String) = frag.findPreference(key)
+
+    @Suppress("UNCHECKED_CAST")
+    fun<T: Preference> findPref(resId: Int) = pref(resId) as T
+
     fun manager() = frag.preferenceManager
     fun screen() = frag.preferenceScreen
 

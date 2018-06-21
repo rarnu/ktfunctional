@@ -19,6 +19,7 @@ class MainActivity : PreferenceActivity(), Preference.OnPreferenceClickListener 
 
     override fun onPreparedPreference() {
         val p = pref("key1")
+
         p?.onPreferenceClickListener = this
     }
 

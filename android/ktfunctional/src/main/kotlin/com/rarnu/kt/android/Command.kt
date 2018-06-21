@@ -12,25 +12,25 @@ class Command {
     var commands = mutableListOf<String>()
     var runAsRoot = false
 
-    var _progress: (CommandProgressType, String?) -> Unit = { _, _ -> }
-    var _result: (String?, String?) -> Unit = { _, _ -> }
+    var _progress: (CommandProgressType, String) -> Unit = { _, _ -> }
+    var _result: (String, String) -> Unit = { _, _ -> }
 
 
-    fun progress(p: (type: CommandProgressType, value: String?) -> Unit) {
+    fun progress(p: (type: CommandProgressType, value: String) -> Unit) {
         _progress = p
     }
 
-    fun result(r: (output: String?, error: String?) -> Unit) {
+    fun result(r: (output: String, error: String) -> Unit) {
         _result = r
     }
 }
 
 fun runCommandAsync(init: Command.() -> Unit) = thread { runCommand(init) }
 
-fun runCommand(init: Command.() -> Unit) {
+fun runCommand(init: Command.() -> Unit): CommandResult {
     val c = Command()
     c.init()
-    CommandOperations.runCommand(c.commands, c.runAsRoot, c._progress, c._result)
+    return CommandOperations.runCommand(c.commands, c.runAsRoot, c._progress, c._result)
 }
 
 /**
@@ -42,14 +42,14 @@ internal object CommandOperations {
 
     internal var busyboxInstalled = arrayOf("/system/xbin/busybox", "/system/bin/busybox").any { File(it).exists() }
 
-    fun runCommand(command: List<String>, root: Boolean, progress: (CommandProgressType, String?) -> Unit, result: (String?, String?) -> Unit) {
-        var output: String? = ""
-        var outError: String? = null
+    fun runCommand(command: List<String>, root: Boolean, progress: (CommandProgressType, String) -> Unit, result: (String, String) -> Unit): CommandResult {
+        var output = ""
+        var outError = ""
         val process: Process
         var rootOs: DataOutputStream? = null
         var procOutOs: BufferedReader? = null
         var procErrOs: BufferedReader? = null
-        progress(CommandProgressType.START, null)
+        progress(CommandProgressType.START, "")
         try {
             if (root) {
                 process = Runtime.getRuntime().exec("su")
@@ -64,7 +64,7 @@ internal object CommandOperations {
             procErrOs = BufferedReader(InputStreamReader(process.errorStream))
             val outStr = StringBuffer()
             val errStr = StringBuffer()
-            var line: String?
+            var line: String
             while (true) {
                 line = procOutOs.readLine()
                 if (line != null) {
@@ -95,9 +95,11 @@ internal object CommandOperations {
             procOutOs?.close()
             procErrOs?.close()
         }
-        progress(CommandProgressType.COMPLETE, null)
+        progress(CommandProgressType.COMPLETE, "")
         result(output, outError)
+        return CommandResult(output, outError)
     }
 
 }
 
+data class CommandResult(val output: String, val error: String)
