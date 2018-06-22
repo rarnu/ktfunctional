@@ -4,7 +4,7 @@ a functional library for kotlin(android)
 #### Using in Android
 
 ```
-compile "com.github.rarnu:ktfunctional:0.2.1"
+compile "com.github.rarnu:ktfunctional:0.2.2"
 ```
 
 #### Try this
