@@ -4,7 +4,6 @@ import android.content.Context
 import org.apache.commons.io.IOUtils
 import java.io.File
 import java.io.FileOutputStream
-import java.io.FileWriter
 import java.io.OutputStream
 import kotlin.concurrent.thread
 

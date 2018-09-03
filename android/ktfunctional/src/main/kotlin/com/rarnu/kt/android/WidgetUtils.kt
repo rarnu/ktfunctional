@@ -23,7 +23,7 @@ fun <T : View> View.v(resId: Int) = findViewById<T>(resId)
 
 fun Context.resStr(resId: Int) = resources.getString(resId)
 
-fun Context.resStr(resId: Int, vararg args: Any?) = resources.getString(resId, args)
+fun Context.resStr(resId: Int, vararg args: Any?) = resources.getString(resId, *args)
 
 fun Context.resStrArray(resId: Int) = resources.getStringArray(resId)
 

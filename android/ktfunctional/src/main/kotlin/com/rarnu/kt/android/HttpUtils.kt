@@ -15,6 +15,8 @@ class HttpUtils {
 
     var url = ""
     var method = HttpMethod.GET
+    var mimeType = "text/json"
+    var data = ""
     var getParam = ""
     var postParam: Map<String, String> = hashMapOf()
     var fileParam: Map<String, String> = hashMapOf()
@@ -45,20 +47,34 @@ private object HttpOperations {
     fun buildRequest(util: HttpUtils): Request {
         val req: Request
         when (util.method) {
-            HttpMethod.GET -> { req = Request.Builder().url("${util.url}?${util.getParam}").build() }
+            HttpMethod.GET -> { req = Request.Builder().url("${util.url}?${util.getParam}").get().build() }
             HttpMethod.POST -> {
                 var u = util.url
                 if (util.getParam != "") { u += "?${util.getParam}" }
-                val body: RequestBody = if (util.fileParam.isEmpty()) {
-                    buildBody(util.postParam)
+                val body = if (util.data != "") {
+                    buildDataBody(util.mimeType, util.data)
                 } else {
-                    buildPostFileParts(util.postParam, util.fileParam)
+                    if (util.fileParam.isEmpty()) {
+                        buildBody(util.postParam)
+                    } else {
+                        buildPostFileParts(util.postParam, util.fileParam)
+                    }
                 }
                 req = Request.Builder().url(u).post(body).build()
             }
             HttpMethod.PUT -> {
-                val body = buildBody(util.postParam)
-                req = Request.Builder().url("${util.url}?${util.getParam}").put(body).build()
+                var u = util.url
+                if (util.getParam != "") { u += "?${util.getParam}" }
+                val body = if (util.data != "") {
+                    buildDataBody(util.mimeType, util.data)
+                } else {
+                    if (util.fileParam.isEmpty()) {
+                        buildBody(util.postParam)
+                    } else {
+                        buildPostFileParts(util.postParam, util.fileParam)
+                    }
+                }
+                req = Request.Builder().url(u).put(body).build()
             }
             HttpMethod.DELETE -> {
                 val body = buildBody(util.postParam)
@@ -87,6 +103,8 @@ private object HttpOperations {
         }
         return builder.build()
     }
+
+    fun buildDataBody(type: String, data: String) = RequestBody.create(MediaType.parse(type), data)
 
     fun buildBody(params: Map<String, String>): RequestBody {
         val builder = FormBody.Builder()
