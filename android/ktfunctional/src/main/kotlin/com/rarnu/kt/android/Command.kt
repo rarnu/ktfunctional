@@ -64,7 +64,7 @@ internal object CommandOperations {
             procErrOs = BufferedReader(InputStreamReader(process.errorStream))
             val outStr = StringBuffer()
             val errStr = StringBuffer()
-            var line: String
+            var line: String?
             while (true) {
                 line = procOutOs.readLine()
                 if (line != null) {

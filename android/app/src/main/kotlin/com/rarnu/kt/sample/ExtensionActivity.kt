@@ -2,9 +2,10 @@ package com.rarnu.kt.sample
 
 import android.app.Activity
 import android.os.Bundle
-import android.util.Log
+import android.os.Handler
 import android.view.MenuItem
 import android.view.View
+import android.widget.ScrollView
 import com.rarnu.kt.android.*
 import kotlinx.android.synthetic.main.activity_extension.*
 
@@ -36,25 +37,34 @@ class ExtensionActivity: Activity(), View.OnClickListener {
         return super.onOptionsItemSelected(item)
     }
 
+    private fun addConsoleLog(txt: String) {
+        runOnUiThread {
+            Handler().post {
+                tvConsole.append("$txt\n")
+                sv.fullScroll(ScrollView.FOCUS_DOWN)
+            }
+        }
+    }
+
     override fun onClick(v: View) {
         val t = v.tag.toString().toInt()
         when(t) {
             0 -> {
-                Log.e(TAG, "dip: 8, px: ${8.dip2px()}")
-                Log.e(TAG, "actionbar height: ${actionBarHeight()}")
-                Log.e(TAG, "statusbar height: ${statusBarHeight()}")
-                Log.e(TAG, "has navigationbar: ${hasNavigationBar()}, height: ${navigationBarHeight()}")
+                addConsoleLog("dip: 8, px: ${8.dip2px()}")
+                addConsoleLog("actionbar height: ${actionBarHeight()}")
+                addConsoleLog("statusbar height: ${statusBarHeight()}")
+                addConsoleLog("has navigationbar: ${hasNavigationBar()}, height: ${navigationBarHeight()}")
             }
             1 -> {
-                Log.e(TAG, "str: ${resStr(R.string.app_name)}")
-                Log.e(TAG, "color: ${resColor(android.R.color.black)}")
-                Log.e(TAG, "drawable: ${resDrawable(android.R.drawable.ic_menu_save)}")
+                addConsoleLog("str: ${resStr(R.string.app_name)}")
+                addConsoleLog("color: ${resColor(android.R.color.black)}")
+                addConsoleLog("drawable: ${resDrawable(android.R.drawable.ic_menu_save)}")
             }
-            2 -> alert("title", "message", "ok") { Log.e(TAG, "ok clicked") }
-            3 -> alert("title", "message", "ok", "cancel") { which -> Log.e(TAG, "click $which") }
-            4 -> alert("title", "message", "btn1", "btn2", "btn3") { which -> Log.e(TAG, "click $which") }
-            5 -> alert("title", "message", "ok", "cancel", "input text", "") { which, text -> Log.e(TAG, "click: $which, text: $text") }
-            6 -> alert("title", "message", "ok", "cancel", "account", "password", "", "") { which, text1, text2 -> Log.e(TAG, "click: $which, text1: $text1, text2: $text2") }
+            2 -> alert("title", "message", "ok") { addConsoleLog("ok clicked") }
+            3 -> alert("title", "message", "ok", "cancel") { which -> addConsoleLog("click $which") }
+            4 -> alert("title", "message", "btn1", "btn2", "btn3") { which -> addConsoleLog("click $which") }
+            5 -> alert("title", "message", "ok", "cancel", "input text", "") { which, text -> addConsoleLog("click: $which, text: $text") }
+            6 -> alert("title", "message", "ok", "cancel", "account", "password", "", "") { which, text1, text2 -> addConsoleLog("click: $which, text1: $text1, text2: $text2") }
 
         }
     }

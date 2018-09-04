@@ -8,7 +8,19 @@
             android:id="@+id/lvItems"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:cacheColorHint="@android:color/transparent">
+            android:cacheColorHint="@android:color/transparent"
+            android:layout_above="@+id/sv">
     </ListView>
 
+    <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:layout_alignParentBottom="true">
+        <TextView
+                android:id="@+id/tvConsole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"/>
+    </ScrollView>
 </RelativeLayout>

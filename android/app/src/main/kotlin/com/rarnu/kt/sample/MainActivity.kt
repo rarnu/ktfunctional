@@ -5,9 +5,10 @@ import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.util.Log
+import android.os.Handler
 import android.view.View
 import android.widget.AdapterView
+import android.widget.ScrollView
 import com.rarnu.kt.android.*
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.ByteArrayInputStream
@@ -16,7 +17,6 @@ import java.io.File
 
 class MainActivity : Activity(), AdapterView.OnItemClickListener {
 
-    private val TAG = "KTFUNCTIONAL"
     private val HTTPROOT = "http://10.211.55.24:12345/phproot"
     private val HTTPURL = "http://10.211.55.24:12345/phproot/sample.php"
 
@@ -90,6 +90,15 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         }
     }
 
+    private fun addConsoleLog(txt: String) {
+        runOnUiThread {
+            Handler().post {
+                tvConsole.append("$txt\n")
+                sv.fullScroll(ScrollView.FOCUS_DOWN)
+            }
+        }
+    }
+
     // ===========================================================
     // HTTP
     // ===========================================================
@@ -97,13 +106,13 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         // sample http get
         httpAsync {
             url = "$HTTPURL?m=get&gp=rarnuget"
-            onSuccess { code, text, cookie ->
-                Log.e(TAG, "code: $code")
-                Log.e(TAG, "data: $text")
+            onSuccess { code, text, _ ->
+                addConsoleLog("code: $code")
+                addConsoleLog("data: $text")
             }
 
             onFail {
-                Log.e(TAG, "error: ${it?.message}")
+                addConsoleLog("error: ${it?.message}")
             }
         }
     }
@@ -114,12 +123,12 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             url = HTTPURL
             method = HttpMethod.POST
             postParam = mapOf("m" to "post", "pp" to "rarnupost")
-            onSuccess { code, text, cookie ->
-                Log.e(TAG, "code: $code")
-                Log.e(TAG, "data: $text")
+            onSuccess { code, text, _ ->
+                addConsoleLog("code: $code")
+                addConsoleLog("data: $text")
             }
             onFail {
-                Log.e(TAG, "error: ${it?.message}")
+                addConsoleLog("error: ${it?.message}")
             }
         }
     }
@@ -137,12 +146,12 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             method = HttpMethod.POST
             postParam = mapOf("m" to "file", "fp" to "rarnufile")
             fileParam = mapOf("file" to File(filesDir, "upload.txt").absolutePath)
-            onSuccess { code, text, cookie ->
-                Log.e(TAG, "code: $code")
-                Log.e(TAG, "data: $text")
+            onSuccess { code, text, _ ->
+                addConsoleLog("code: $code")
+                addConsoleLog("data: $text")
             }
             onFail {
-                Log.e(TAG, "error: ${it?.message}")
+                addConsoleLog("error: ${it?.message}")
             }
         }
     }
@@ -156,9 +165,9 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             url = "$HTTPROOT/sample.txt"
             localFile = File(filesDir, "server.txt").absolutePath
             progress { state, position, fileSize, error ->
-                Log.e(TAG, "$state, $position, $fileSize, $error")
+                addConsoleLog("$state, $position, $fileSize, $error")
                 if (state == DownloadState.WHAT_DOWNLOAD_FINISH) {
-                    Log.e(TAG, localFile)
+                    addConsoleLog(localFile)
                 }
             }
         }
@@ -169,13 +178,13 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
     // ===========================================================
     private fun sampleFileIOTF() {
         // sample fileio text -> file
-        Log.e(TAG, filesDir.absolutePath)
+        addConsoleLog(filesDir.absolutePath)
         fileIO {
             src = "sample text"
             dest = File(filesDir, "sample.txt")
             isSrcText = true
-            result { status, text, errMsg ->
-                Log.e(TAG, if (status) "TRUE" else "FALSE")
+            result { status, _, _ ->
+                addConsoleLog(if (status) "TRUE" else "FALSE")
             }
         }
     }
@@ -187,11 +196,11 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             src = "sample text"
             dest = data
             isSrcText = true
-            result { status, text, errMsg ->
+            result { status, _, errMsg ->
                 if (status) {
-                    Log.e(TAG, data.toString())
+                    addConsoleLog(data.toString())
                 } else {
-                    Log.e(TAG, errMsg)
+                    addConsoleLog("$errMsg")
                 }
             }
         }
@@ -203,11 +212,11 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         fileIO {
             src = File(filesDir, "sample.txt")
             dest = data
-            result { status, text, errMsg ->
+            result { status, _, errMsg ->
                 if (status) {
-                    Log.e(TAG, data.toString())
+                    addConsoleLog(data.toString())
                 } else {
-                    Log.e(TAG, errMsg)
+                    addConsoleLog("$errMsg")
                 }
             }
         }
@@ -221,9 +230,9 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             isDestText = true
             result { status, text, errMsg ->
                 if (status) {
-                    Log.e(TAG, text)
+                    addConsoleLog("$text")
                 } else {
-                    Log.e(TAG, errMsg)
+                    addConsoleLog("$errMsg")
                 }
             }
         }
@@ -235,8 +244,8 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         fileIO {
             src = data
             dest = File(filesDir, "sample.txt")
-            result { status, text, errMsg ->
-                Log.e(TAG, if (status) "TRUE" else "FALSE")
+            result { status, _, _ ->
+                addConsoleLog(if (status) "TRUE" else "FALSE")
             }
         }
     }
@@ -248,9 +257,9 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             isDestText = true
             result { status, text, errMsg ->
                 if (status) {
-                    Log.e(TAG, text)
+                    addConsoleLog("$text")
                 } else {
-                    Log.e(TAG, errMsg)
+                    addConsoleLog("$errMsg")
                 }
             }
         }
@@ -267,9 +276,9 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             isDestText = true
             result { status, text, errMsg ->
                 if (status) {
-                    Log.e(TAG, text)
+                    addConsoleLog("$text")
                 } else {
-                    Log.e(TAG, errMsg)
+                    addConsoleLog("$errMsg")
                 }
             }
         }
@@ -281,11 +290,11 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         assetsIO {
             src = "b.txt"
             dest = data
-            result { status, text, errMsg ->
+            result { status, _, errMsg ->
                 if (status) {
-                    Log.e(TAG, data.toString())
+                    addConsoleLog(data.toString())
                 } else {
-                    Log.e(TAG, errMsg)
+                    addConsoleLog("$errMsg")
                 }
             }
         }
@@ -296,8 +305,8 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         assetsIO {
             src = "b.txt"
             dest = File(filesDir, "assets.txt")
-            result { status, text, errMsg ->
-                Log.e(TAG, if (status) "TRUE" else "FALSE")
+            result { status, _, _ ->
+                addConsoleLog(if (status) "TRUE" else "FALSE")
             }
         }
     }
@@ -309,9 +318,9 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         // sample url decode
         fun testurl(url: String) {
             val info = decodeUrl(url)
-            Log.e(TAG, "info => protocol: ${info.proto}, port: ${info.port}, host: ${info.host}, uri: ${info.uri}")
+            addConsoleLog("info => protocol: ${info.proto}, port: ${info.port}, host: ${info.host}, uri: ${info.uri}")
             for ((k, v) in info.params) {
-                Log.e(TAG, "k: $k, v: $v")
+                addConsoleLog("k: $k, v: $v")
             }
         }
         testurl("https://www.baidu.com:1234/uri/suburi?p1=a&p2=b")
@@ -328,11 +337,11 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
     // ===========================================================
     private fun sampleContext() {
         // sample context
-        Log.e(TAG, "version code: $appVersionCode")
-        Log.e(TAG, "version name: $appVersionName")
+        addConsoleLog("version code: $appVersionCode")
+        addConsoleLog("version name: $appVersionName")
         writeConfig("samplekey", "sample value")
         val cfg = readConfig("samplekey", "")
-        Log.e(TAG, "config: $cfg")
+        addConsoleLog("config: $cfg")
     }
 
     // ===========================================================
@@ -340,8 +349,8 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
     // ===========================================================
     private fun sampleSystem() {
         // sample system
-        Log.e(TAG, "root: ${System.rooted}")
-        Log.e(TAG, "busybox: ${System.busyboxInstalled}")
+        addConsoleLog("root: ${System.rooted}")
+        addConsoleLog("busybox: ${System.busyboxInstalled}")
     }
 
     // ===========================================================
@@ -351,7 +360,7 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         // sample zip zip
         val fmgr = File(filesDir, "zip")
         fmgr.mkdirs()
-        Log.e(TAG, fmgr.absolutePath)
+        addConsoleLog(fmgr.absolutePath)
         fileIO {
             src = "SampleA"
             dest = File(fmgr, "a.txt")
@@ -371,25 +380,25 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             zipPath = File(filesDir, "sample.zip").absolutePath
             srcPath = fmgr.absolutePath
             success {
-                Log.e(TAG, "SUCC")
+                addConsoleLog("SUCC")
             }
             error {
-                Log.e(TAG, "error: $it")
+                addConsoleLog("error: $it")
             }
         }
     }
 
     private fun sampleZipUnzip() {
         // sample zip unzip
-        Log.e(TAG, filesDir.absolutePath)
+        addConsoleLog(filesDir.absolutePath)
         unzip {
             zipPath = File(filesDir, "sample.zip").absolutePath
             destPath = File(filesDir, "unzip").absolutePath
             success {
-                Log.e(TAG, "SUCC")
+                addConsoleLog("SUCC")
             }
             error {
-                Log.e(TAG, "error: $it")
+                addConsoleLog("error: $it")
             }
         }
     }

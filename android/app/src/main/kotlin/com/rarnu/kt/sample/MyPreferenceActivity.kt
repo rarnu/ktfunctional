@@ -5,6 +5,7 @@ import android.preference.Preference
 import android.util.Log
 import android.view.MenuItem
 import com.rarnu.kt.android.PreferenceActivity
+import com.rarnu.kt.android.alert
 import com.rarnu.kt.android.showActionBack
 
 class MyPreferenceActivity: PreferenceActivity(), Preference.OnPreferenceClickListener {
@@ -31,7 +32,7 @@ class MyPreferenceActivity: PreferenceActivity(), Preference.OnPreferenceClickLi
     }
 
     override fun onPreferenceClick(preference: Preference): Boolean {
-        Log.e(TAG, preference.key)
+        alert(TAG, preference.key, "OK") { }
         return true
     }
 

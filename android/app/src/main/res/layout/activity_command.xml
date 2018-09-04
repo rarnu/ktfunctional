@@ -3,4 +3,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+    <EditText
+            android:id="@+id/etCmd"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:hint="Input command"
+            android:background="@null"
+            android:textSize="12sp"
+            android:layout_toLeftOf="@+id/btnRun"
+            android:layout_marginLeft="8dip"
+    />
+    <Button
+            android:id="@+id/btnRun"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:layout_marginRight="8dip"
+            android:text="->"
+            android:layout_alignParentRight="true"/>
+
+    <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:layout_alignParentBottom="true">
+        <TextView
+                android:id="@+id/tvConsole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"/>
+    </ScrollView>
+
 </RelativeLayout>

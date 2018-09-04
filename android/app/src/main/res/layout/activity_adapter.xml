@@ -6,7 +6,8 @@
     <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/srlPulldown"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sv">
         <ListView
                 android:id="@+id/lvSample"
                 android:layout_width="match_parent"
@@ -15,4 +16,16 @@
 
         </ListView>
     </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:layout_alignParentBottom="true">
+        <TextView
+                android:id="@+id/tvConsole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"/>
+    </ScrollView>
 </RelativeLayout>
