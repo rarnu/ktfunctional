@@ -15,7 +15,7 @@ fun decodeUrl(url: String): UrlInfo {
     if (innerUrl.contains("://")) {
         // find protocol
         val idx = innerUrl.indexOf(":")
-        val p = innerUrl.substring(0, idx - 1)
+        val p = innerUrl.substring(0, idx)
         info.proto = p
         if (p == "http") {
             info.port = 80

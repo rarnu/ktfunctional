@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ktfunctional</string>
+    <string name="sample_fmt" formatted="false">test %d, %s, %s</string>
 </resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/btn0"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:text="UI"
+            android:layout_marginTop="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:tag="0" />
+    <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:text="Widget"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_below="@+id/btn0"
+            android:tag="1" />
+    <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:text="Alert 1"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_below="@+id/btn1"
+            android:tag="2" />
+    <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:text="Alert 2"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_below="@+id/btn2"
+            android:tag="3" />
+    <Button
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:text="Alert 3"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_below="@+id/btn3"
+            android:tag="4" />
+    <Button
+            android:id="@+id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:text="Alert 4"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_below="@+id/btn4"
+            android:tag="5" />
+    <Button
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:text="Alert 5"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_below="@+id/btn5"
+            android:tag="6" />
+
+</RelativeLayout>

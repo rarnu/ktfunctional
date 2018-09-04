@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.rarnu.kt.sample">
 
-    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="26"/>
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="28"/>
 
     <application
             android:allowBackup="true"
@@ -11,13 +11,24 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@android:style/Theme.Material.Light.DarkActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ImageActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ExtensionActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".AdapterActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".CommandActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".MyPreferenceActivity"
+                  android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
