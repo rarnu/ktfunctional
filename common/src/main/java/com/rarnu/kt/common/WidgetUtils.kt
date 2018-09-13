@@ -1,5 +1,6 @@
 package com.rarnu.kt.common
 
+import javafx.scene.Node
 import javafx.scene.control.Button
 import javafx.scene.control.ListCell
 import javafx.scene.control.ListView
@@ -42,7 +43,7 @@ fun <T : Any> ListView<T>.ios() {
 abstract class BaseCell<T>: ListCell<T>() {
 
     abstract fun itemHeight(): Double
-    abstract fun makePane(): Pane
+    abstract fun makePane(): Node?
 
     override fun updateItem(item: T, empty: Boolean) {
         super.updateItem(item, empty)
