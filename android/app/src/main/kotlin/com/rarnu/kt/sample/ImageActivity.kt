@@ -19,7 +19,7 @@ class ImageActivity: Activity(), View.OnClickListener {
         showActionBack()
         actionBar.title = "Image"
         // image
-        originPic = assetsBitmap(this, "sample.png")
+        originPic = assetsBitmap("sample.png")
         img.setImageBitmap(originPic)
 
         btn0.setOnClickListener(this)

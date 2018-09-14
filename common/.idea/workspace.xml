@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd18a564-80db-4d37-94a9-3c526520bef9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/WidgetUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/WidgetUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/ImageActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/ImageActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/AssetsUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/AssetsUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/FileUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/FileUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -29,40 +38,41 @@
     <session id="99263857">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="4" />
+          <entry key="gradle" value="5" />
           <entry key="gradlew" value="1" />
           <entry key="java" value="4" />
-          <entry key="kt" value="27" />
+          <entry key="kt" value="29" />
           <entry key="properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="4" />
+          <entry key="Groovy" value="5" />
           <entry key="JAVA" value="4" />
-          <entry key="Kotlin" value="27" />
+          <entry key="Kotlin" value="29" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="155" />
-          <entry key="kt" value="1152" />
+          <entry key="gradle" value="156" />
+          <entry key="kt" value="1154" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="155" />
-          <entry key="Kotlin" value="1152" />
+          <entry key="Groovy" value="156" />
+          <entry key="Kotlin" value="1154" />
         </counts>
       </usages-collector>
     </session>
@@ -70,19 +80,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/WidgetUtils.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+            <state relative-caret-position="467">
+              <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -90,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Labeled.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="421" column="34" lean-forward="true" selection-start-line="421" selection-start-column="34" selection-end-line="421" selection-end-column="34" />
+            <state relative-caret-position="4755">
+              <caret line="421" column="34" selection-start-line="421" selection-start-column="34" selection-end-line="421" selection-end-column="34" />
               <folding>
                 <element signature="e#15047#15048#0" expanded="true" />
                 <element signature="e#15096#15097#0" expanded="true" />
@@ -130,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/Toast.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
+            <state relative-caret-position="525">
               <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
               <folding>
                 <element signature="e#29#548#0" expanded="true" />
@@ -160,8 +161,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/ZipUtils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="-261">
               <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -384,9 +394,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6147246493000" />
+        <entry key="$PROJECT_DIR$" value="6147335891000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1817367312" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3448439349" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="3995198611" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2618275548" />
       </map>
@@ -608,7 +618,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/DatetimeUtils.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/DownloadUtils.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/HttpUtils.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/RegExUtils.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/UrlDecoder.kt" />
@@ -621,8 +630,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/ImageUtils.kt" />
         <option value="$PROJECT_DIR$/gradle.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/Command.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/WidgetUtils.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -646,6 +656,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -687,8 +699,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -765,18 +775,30 @@
       <updated>1536804016656</updated>
       <workItem from="1536804018421" duration="89000" />
       <workItem from="1536804115958" duration="5753000" />
-      <workItem from="1536821995787" duration="563000" />
+      <workItem from="1536821995787" duration="752000" />
+      <workItem from="1536826604584" duration="103000" />
+      <workItem from="1536826743451" duration="7000" />
+      <workItem from="1536909200212" duration="122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6405000" />
+    <option name="totallyTimeSpent" value="6826000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1113" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2550586" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2630458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -789,7 +811,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32908913" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32908913" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -852,13 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/UIUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -868,13 +883,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/ImageUtils.kt" />
     <entry file="file://$PROJECT_DIR$/src/test/java/LibraryTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/HttpUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/Command.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1125">
@@ -889,6 +897,38 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/HttpUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/WidgetUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Labeled.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4755">
+          <caret line="421" column="34" selection-start-line="421" selection-start-column="34" selection-end-line="421" selection-end-column="34" />
+          <folding>
+            <element signature="e#15047#15048#0" expanded="true" />
+            <element signature="e#15096#15097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3375">
+          <caret line="383" column="22" selection-start-line="383" selection-start-column="22" selection-end-line="383" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -908,7 +948,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/Toast.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
+        <state relative-caret-position="525">
           <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
           <folding>
             <element signature="e#29#548#0" expanded="true" />
@@ -930,42 +970,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/ZipUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="-261">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Labeled.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="421" column="34" lean-forward="true" selection-start-line="421" selection-start-column="34" selection-end-line="421" selection-end-column="34" />
-          <folding>
-            <element signature="e#15047#15048#0" expanded="true" />
-            <element signature="e#15096#15097#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3375">
-          <caret line="383" column="22" selection-start-line="383" selection-start-column="22" selection-end-line="383" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/WidgetUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        <state relative-caret-position="240">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
         </state>
       </provider>
     </entry>

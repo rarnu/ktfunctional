@@ -47,6 +47,60 @@ fun fileCopy(init: FileIO.() -> Unit) {
     FileOperations.fileCopy(f.src, f.dest, f._result)
 }
 
+fun fileReadText(filePath: String): String {
+    var ret = ""
+    fileIO {
+        src = filePath
+        isDestText = true
+        result { status, text, _ ->
+            if (status) {
+                ret = text!!
+            }
+        }
+    }
+    return ret
+}
+
+fun fileReadText(file: File): String {
+    var ret = ""
+    fileIO {
+        src = file
+        isDestText = true
+        result { status, text, _ ->
+            if (status) {
+                ret = text!!
+            }
+        }
+    }
+    return ret
+}
+
+fun fileWriteText(filePath: String, text: String): Boolean {
+    var ret = false
+    fileIO {
+        src = text
+        dest = filePath
+        isSrcText = true
+        result { status, _, _ ->
+            ret = status
+        }
+    }
+    return ret
+}
+
+fun fileWriteText(file: File, text: String): Boolean {
+    var ret = false
+    fileIO {
+        src = text
+        dest = file
+        isSrcText = true
+        result { status, _, _ ->
+            ret = status
+        }
+    }
+    return ret
+}
+
 private object FileOperations {
 
     private const val ERROR_SRC = "Src Type Error"

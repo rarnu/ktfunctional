@@ -1,10 +1,8 @@
 package com.rarnu.kt.android
 
 import android.content.Context
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
-import android.graphics.drawable.Drawable
 import org.apache.commons.io.IOUtils
 import java.io.File
 import java.io.FileOutputStream
@@ -32,10 +30,23 @@ fun Context.assetsIO(init: Assets.() -> Unit) {
     AssetsOperations.assetsIO(this, a.src, a.dest, a.isDestText, a._result)
 }
 
-fun Context.assetsBitmap(ctx: Context, src: String) = BitmapFactory.decodeStream(ctx.assets.open(src))
+fun Context.assetsBitmap(src: String) = BitmapFactory.decodeStream(this.assets.open(src))
 
-fun Context.assetsDrawable(ctx: Context, src: String) = BitmapDrawable(ctx.resources, assetsBitmap(ctx, src))
+fun Context.assetsDrawable(src: String) = BitmapDrawable(this.resources, assetsBitmap(src))
 
+fun Context.assetsReadText(srcFile: String): String {
+    var ret = ""
+    assetsIO {
+        src = srcFile
+        isDestText = true
+        result { status, text, _ ->
+            if (status) {
+                ret = text!!
+            }
+        }
+    }
+    return ret
+}
 
 private object AssetsOperations {
 
