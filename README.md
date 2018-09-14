@@ -10,7 +10,7 @@ compile "com.github.rarnu:ktfunctional:0.5.2"
 #### Using in Kotlin Project
 
 ```
-add dependence of common-0.1.0.jar
+add dependence of common-0.2.0.jar
 ```
 
 #### Try this
