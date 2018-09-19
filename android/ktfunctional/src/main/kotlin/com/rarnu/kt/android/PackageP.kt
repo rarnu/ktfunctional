@@ -20,8 +20,8 @@ fun PackageParser.parsePackage(file: File, flag: Int): Package? {
     var ret: Package? = null
     try {
         val mParse = javaClass.getDeclaredMethod("parsePackage", File::class.java, Integer.TYPE)
-        mParse?.isAccessible = true
-        ret = mParse?.invoke(this, file, flag)
+        mParse.isAccessible = true
+        ret = mParse.invoke(this, file, flag)
     } catch (e: Throwable) {
     }
     return ret

@@ -9,7 +9,7 @@ val Context.appVersionCode: Int
         var ret = 0
         try {
             val pi = packageManager.getPackageInfo(packageName, 0)
-            ret = pi.versionCode
+            ret = pi.longVersionCode.toInt()
         } catch (e: Exception) {
 
         }

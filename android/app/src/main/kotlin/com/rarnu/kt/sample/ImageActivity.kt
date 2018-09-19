@@ -17,7 +17,7 @@ class ImageActivity: Activity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_image)
         showActionBack()
-        actionBar.title = "Image"
+        actionBar?.title = "Image"
         // image
         originPic = assetsBitmap("sample.png")
         img.setImageBitmap(originPic)

@@ -54,7 +54,7 @@ internal object CommandOperations {
             if (root) {
                 process = Runtime.getRuntime().exec("su")
                 rootOs = DataOutputStream(process.outputStream)
-                command.forEach { rootOs?.writeBytes("$it\n") }
+                command.forEach { rootOs.writeBytes("$it\n") }
                 rootOs.writeBytes("exit\n")
                 rootOs.flush()
             } else {

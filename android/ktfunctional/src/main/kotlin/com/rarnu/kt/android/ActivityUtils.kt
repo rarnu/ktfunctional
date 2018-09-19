@@ -14,6 +14,7 @@ fun Activity.showActionBack() {
     actionBar?.setDisplayHomeAsUpEnabled(true)
 }
 
+@Suppress("DEPRECATION")
 abstract class PreferenceActivity : Activity() {
 
     abstract fun getPreferenceXml(): Int

@@ -1,9 +1,12 @@
+@file:Suppress("DEPRECATION")
+
 package com.rarnu.kt.android
 
 import android.app.Activity
 import android.content.AsyncTaskLoader
 import android.content.Context
 import android.database.Cursor
+import android.os.Build
 import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
@@ -27,9 +30,9 @@ fun Context.resStr(resId: Int, vararg args: Any?) = resources.getString(resId, *
 
 fun Context.resStrArray(resId: Int) = resources.getStringArray(resId)
 
-fun Context.resColor(resId: Int) = resources.getColor(resId, theme)
+fun Context.resColor(resId: Int) = if (Build.VERSION.SDK_INT >= 23) { resources.getColor(resId, theme) } else { resources.getColor(resId) }
 
-fun Context.resDrawable(resId: Int) = resources.getDrawable(resId, theme)
+fun Context.resDrawable(resId: Int) = if (Build.VERSION.SDK_INT >= 21) { resources.getDrawable(resId, theme) } else { resources.getDrawable(resId) }
 
 
 /**
@@ -142,7 +145,6 @@ abstract class BaseAdapter<T, H>(ctx: Context, protected var list: MutableList<T
         }
 
     }
-
 }
 
 abstract class BaseClassLoader<T>(context: Context) : AsyncTaskLoader<T>(context) {

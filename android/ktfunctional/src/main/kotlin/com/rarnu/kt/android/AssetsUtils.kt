@@ -10,7 +10,7 @@ import java.io.OutputStream
 import kotlin.concurrent.thread
 
 class Assets {
-    var src: String? = null
+    var src = ""
     /**
      * dest can be path(String), file(File), stream(OutputStream)
      */
@@ -50,7 +50,7 @@ fun Context.assetsReadText(srcFile: String): String {
 
 private object AssetsOperations {
 
-    fun assetsIO(context: Context?, src: String?, dest: Any?, isDestText: Boolean, callback:(Boolean, String?, String?) -> Unit) {
+    fun assetsIO(context: Context?, src: String, dest: Any?, isDestText: Boolean, callback:(Boolean, String?, String?) -> Unit) {
 
         val ins = context?.assets?.open(src)
         if (isDestText) {

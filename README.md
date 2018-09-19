@@ -4,13 +4,13 @@ a functional library for kotlin(android/jvm)
 #### Using in Android
 
 ```
-compile "com.github.rarnu:ktfunctional:0.5.2"
+compile "com.github.rarnu:ktfunctional:0.7.0"
 ```
 
 #### Using in Kotlin Project
 
 ```
-add dependence of common-0.2.0.jar
+add dependence of common-0.7.0.jar
 ```
 
 #### Try this

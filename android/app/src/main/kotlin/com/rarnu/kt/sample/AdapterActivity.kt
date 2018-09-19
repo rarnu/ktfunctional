@@ -21,7 +21,7 @@ class AdapterActivity: Activity(), AdapterView.OnItemClickListener, AdapterView.
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_adapter)
         showActionBack()
-        actionBar.title = "Adapter"
+        actionBar?.title = "Adapter"
 
         // adapter
         adapter = MyAdapter(this, list)

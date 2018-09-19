@@ -2,16 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd18a564-80db-4d37-94a9-3c526520bef9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_1_2_2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jre7_1_1_2_2_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/AdapterActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/AdapterActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/CommandActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/CommandActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/ExtensionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/ExtensionActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/ImageActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/ImageActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/MyPreferenceActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/kotlin/com/rarnu/kt/sample/MyPreferenceActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../android/ktfunctional/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ActivityUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ActivityUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/AssetsUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/AssetsUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/FileUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/FileUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/Command.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/Command.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ContextUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ContextUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/PackageP.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/PackageP.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/PackageParserP.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/PackageParserP.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/WidgetUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/WidgetUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_61.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_2_61.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_61.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_2_61.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -34,55 +54,12 @@
       </state>
     </system>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="99263857">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="gradle" value="5" />
-          <entry key="gradlew" value="1" />
-          <entry key="java" value="4" />
-          <entry key="kt" value="29" />
-          <entry key="properties" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="4" />
-          <entry key="Kotlin" value="29" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="gradle" value="156" />
-          <entry key="kt" value="1154" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Groovy" value="156" />
-          <entry key="Kotlin" value="1154" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
+            <state relative-caret-position="1485">
               <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
             </state>
           </provider>
@@ -161,7 +138,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/ZipUtils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-261">
+            <state relative-caret-position="105">
               <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
@@ -170,8 +147,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            <state relative-caret-position="525">
+              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -187,431 +164,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="myGradleHomes">
-      <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/Develop/gradle-4.4" />
-      </map>
-    </option>
-    <option name="myGradleVersions">
-      <map>
-        <entry key="$PROJECT_DIR$" value="4.4" />
-      </map>
-    </option>
-    <option name="availableProjects">
-      <map>
-        <entry>
-          <key>
-            <ExternalProjectPojo>
-              <option name="name" value="common" />
-              <option name="path" value="$PROJECT_DIR$" />
-            </ExternalProjectPojo>
-          </key>
-          <value>
-            <list>
-              <ExternalProjectPojo>
-                <option name="name" value="common" />
-                <option name="path" value="$PROJECT_DIR$" />
-              </ExternalProjectPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="availableTasks">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'common'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="inspectClassesForKotlinIC" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'common'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'common'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'common'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Gradle wrapper files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="signArchives" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'common'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'common'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Initializes a new Gradle build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="init" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles the source set 'test'.kotlin." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestKotlin" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'common'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'common'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles the source set 'main'.kotlin." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileKotlin" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="install" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uploads all artifacts belonging to configuration ':archives'" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="uploadArchives" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'common'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$" value="6147335891000" />
-        <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="3448439349" />
-        <entry key="$PROJECT_DIR$/gradle.properties" value="3995198611" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="2618275548" />
-      </map>
-    </option>
-    <option name="projectBuildClasspath">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <ExternalProjectBuildClasspathPojo>
-              <option name="modulesBuildClasspath">
-                <map>
-                  <entry key="$PROJECT_DIR$">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="entries">
-                          <list>
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.61/49e02dbf8e63e9c0e07227f42ac4434562d36849/kotlin-gradle-plugin-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.61/77a9484a91b965bdab66b1ddd284a26bf60dcc64/kotlin-gradle-plugin-api-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.61/957a542317a109a91740dbfd7985c6d53b805a48/kotlin-compiler-embeddable-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.61/e7182f6ecdfd4e7958febeaec366ab1cd8520397/kotlin-annotation-processing-gradle-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.61/8a930fa2df4db285b4f87fa6a88501207d348dd5/kotlin-android-extensions-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.61/ec21751c51d00a1765bc2d56f56b37dc42f013ab/kotlin-compiler-runner-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.61/5146b44c50f5e853d6d77150089b6281d72fe736/kotlin-stdlib-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.61/2b238c25391b625f82be36cdcb5338fc6e893544/kotlin-script-runtime-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.61/3791515d7539f39f1cc3298aa2fa685496e03a9d/kotlin-reflect-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.61/aa3622272b4bd1d65c02702fa27033e8cc85a4c1/kotlin-build-common-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.61/d21b0b9d9dc54a2bfd47b9bc45c4aeb172a2008c/kotlin-daemon-client-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.61/bb8aafdddb6c895ba1a9646eddabdb844eb544fb/kotlin-stdlib-common-1.2.61-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.61/6a08413ee8ac77a7eda563b757661401f940ec49/kotlin-gradle-plugin-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.61/e5cd4bae31ef34853235337ea8779badfb59952c/kotlin-gradle-plugin-api-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.61/8f4812486d21943cea3f170d53537e628f7eef8c/kotlin-compiler-embeddable-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.61/57f9bb657e120efe72b86b58781636770606019a/kotlin-annotation-processing-gradle-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.61/564710f8171991001cba1c828c3331d833d9d28b/kotlin-android-extensions-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.61/51d4f6b89c6db2ec32a81bd19d087e91f5b01e5b/kotlin-compiler-runner-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.61/5bc44acc4b3f0d19166ae3e50454b41e8ff29335/kotlin-stdlib-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.61/75e4bfc103b71324be6fc862ce806d5399508a14/kotlin-script-runtime-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.61/6fd5bcfc9ffc446dd147ea006bee7ef5f0ad8ca4/kotlin-reflect-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.61/6a2122077527c3e6a1c6c173e85c71eaa91f66fa/kotlin-build-common-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.61/fbc88762858fcf7a70cecf55f711e83910d01ede/kotlin-daemon-client-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.61/772de03e12d932f489e41aef997d26c20a4ebee6/kotlin-stdlib-common-1.2.61.jar" />
-                            <option value="$USER_HOME$/Develop/gradle-4.4/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
-                          </list>
-                        </option>
-                        <option name="path" value="$PROJECT_DIR$" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="name" value="common" />
-              <option name="projectBuildClasspath">
-                <list>
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/ide" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/internal-integ-testing" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/platform-native" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/reporting" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/language-groovy" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/build-option" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/launcher" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/platform-base" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/announce" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/signing" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/core" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/installation-beacon" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/jvm-services" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/native" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/tooling-api" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/platform-play" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/ivy" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/wrapper" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/process-services" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/plugins" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/antlr" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/plugin-use" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/language-jvm" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/maven" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/testing-base" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/resources" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/version-control" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/osgi" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/resources-http" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/internal-testing" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/composite-builds" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/model-groovy" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/test-kit" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/cli" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/build-init" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/ear" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/jacoco" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/persistent-cache" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/build-comparison" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/publish" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/platform-jvm" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/resources-sftp" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/base-services" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/model-core" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/scala" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/diagnostics" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/dependency-management" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/ide-play" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/workers" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/code-quality" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/language-java" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/build-cache" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/plugin-development" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/core-api" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/javascript" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/resources-gcs" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/testing-native" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/internal-performance-testing" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/ide-native" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/base-services-groovy" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/messaging" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/testing-jvm" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/tooling-api-builders" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/logging" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/language-scala" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/language-native" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/resources-s3" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/internal-android-performance-testing" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/src/build-cache-http" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-wrapper-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-logging-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-native-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-runtime-api-info-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-kotlin-dsl-tooling-builders-0.13.1.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-build-cache-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-process-services-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-base-services-groovy-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-installation-beacon-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/groovy-all-2.4.12.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-core-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/ant-launcher-1.9.9.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-model-core-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/ant-1.9.9.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-base-services-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-kotlin-dsl-0.13.1.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-launcher-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-jvm-services-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-messaging-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-build-option-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-kotlin-dsl-tooling-models-0.13.1.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-persistent-cache-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-docs-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-cli-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-core-api-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-tooling-api-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-resources-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/gradle-model-groovy-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-announce-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-tooling-api-builders-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-ide-play-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-language-scala-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-plugin-use-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-version-control-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-language-native-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-build-comparison-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-plugins-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-jacoco-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-platform-native-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-javascript-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-workers-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-build-cache-http-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-ide-native-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-diagnostics-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-plugin-development-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-language-jvm-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-platform-base-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-testing-native-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-dependency-management-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-composite-builds-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-publish-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-ear-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-resources-http-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-scala-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-resources-gcs-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-ide-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-platform-play-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-reporting-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-antlr-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-language-java-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-language-groovy-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-osgi-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-ivy-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-test-kit-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-code-quality-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-resources-s3-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-signing-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-resources-sftp-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-maven-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-build-init-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-testing-jvm-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-testing-base-4.4.jar" />
-                  <option value="$USER_HOME$/Develop/gradle-4.4/lib/plugins/gradle-platform-jvm-4.4.jar" />
-                </list>
-              </option>
-            </ExternalProjectBuildClasspathPojo>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$/../../anti-counterfeit-android" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../antivm" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../command" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
-        <entry key="$PROJECT_DIR$/../../../hujiang/android/Android_Library_Journal_Truster" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../hujiang/android/android_library_studytools" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../hujiang/android/xposed_detector" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../hujiang/iCoding/icoding/pccross" value="PREVIEW" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -636,12 +188,6 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
@@ -655,8 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -699,6 +243,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -727,7 +272,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -745,7 +290,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -753,7 +298,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
@@ -779,11 +324,13 @@
       <workItem from="1536826604584" duration="103000" />
       <workItem from="1536826743451" duration="7000" />
       <workItem from="1536909200212" duration="122000" />
+      <workItem from="1537334952424" duration="1047000" />
+      <workItem from="1537338796910" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6826000" />
+    <option name="totallyTimeSpent" value="7881000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -798,7 +345,7 @@
     <frame x="0" y="23" width="1920" height="1113" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2630458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2683706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -813,7 +360,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32908913" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32908913" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32908913" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32908913" />
@@ -829,13 +376,11 @@
       <window_info anchor="right" id="Database" order="9" />
       <window_info anchor="right" id="Maven Projects" order="10" />
       <window_info anchor="right" id="Gradle" order="11" />
+      <window_info anchor="right" id="Maven" order="12" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Library.java" />
@@ -914,6 +459,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Labeled.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4755">
@@ -970,24 +522,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/FileUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/common/ZipUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261">
+        <state relative-caret-position="105">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        <state relative-caret-position="525">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
         </state>
       </provider>
     </entry>

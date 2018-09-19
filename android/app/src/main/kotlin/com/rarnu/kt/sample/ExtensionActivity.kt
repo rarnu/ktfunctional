@@ -17,7 +17,7 @@ class ExtensionActivity: Activity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_extension)
         showActionBack()
-        actionBar.title = "Extension"
+        actionBar?.title = "Extension"
 
         // extension
         btn0.setOnClickListener(this)

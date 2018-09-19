@@ -52,7 +52,7 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         showActionBack()
-        actionBar.title = "Kt.Functional"
+        actionBar?.title = "Kt.Functional"
 
         val adapter = MyAdapter(this, lstItem)
         lvItems.adapter = adapter

@@ -15,7 +15,7 @@ class MyPreferenceActivity: PreferenceActivity(), Preference.OnPreferenceClickLi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         showActionBack()
-        actionBar.title = "Preference"
+        actionBar?.title = "Preference"
     }
 
     override fun getPreferenceXml() = R.xml.preference_my

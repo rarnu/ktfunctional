@@ -15,7 +15,7 @@ class CommandActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_command)
         showActionBack()
-        actionBar.title = "Command"
+        actionBar?.title = "Command"
 
         // command
         btnRun.setOnClickListener {
