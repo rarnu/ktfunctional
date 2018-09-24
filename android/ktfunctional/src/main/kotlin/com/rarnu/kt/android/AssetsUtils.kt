@@ -7,6 +7,7 @@ import org.apache.commons.io.IOUtils
 import java.io.File
 import java.io.FileOutputStream
 import java.io.OutputStream
+import java.nio.charset.Charset
 import kotlin.concurrent.thread
 
 class Assets {
@@ -55,7 +56,7 @@ private object AssetsOperations {
         val ins = context?.assets?.open(src)
         if (isDestText) {
             try {
-                val text = IOUtils.toString(ins)
+                val text = IOUtils.toString(ins, Charset.defaultCharset())
                 callback(true, text, null)
             } catch (e: Exception) {
                 callback(false, null, e.message)

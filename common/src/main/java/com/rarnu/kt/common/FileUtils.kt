@@ -2,6 +2,7 @@ package com.rarnu.kt.common
 
 import org.apache.commons.io.IOUtils
 import java.io.*
+import java.nio.charset.Charset
 import kotlin.concurrent.thread
 
 class FileIO {
@@ -186,7 +187,7 @@ private object FileOperations {
     private fun streamIOAny(src: InputStream, dest: Any?, isDestText: Boolean, callback: (Boolean, String?, String?) -> Unit) {
         if (isDestText) {
             try {
-                val text = IOUtils.toString(src)
+                val text = IOUtils.toString(src, Charset.defaultCharset())
                 callback(true, text, null)
             } catch (e: Exception) {
                 callback(false, null, e.message)
