@@ -7,6 +7,8 @@ import android.content.AsyncTaskLoader
 import android.content.Context
 import android.database.Cursor
 import android.os.Build
+import android.os.Handler
+import android.os.Looper
 import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
@@ -34,6 +36,7 @@ fun Context.resColor(resId: Int) = if (Build.VERSION.SDK_INT >= 23) { resources.
 
 fun Context.resDrawable(resId: Int) = if (Build.VERSION.SDK_INT >= 21) { resources.getDrawable(resId, theme) } else { resources.getDrawable(resId) }
 
+fun runOnMainThread(runnable: () -> Unit) = Handler(Looper.getMainLooper()).post { runnable() }
 
 /**
  * T: Base Type in Adapter

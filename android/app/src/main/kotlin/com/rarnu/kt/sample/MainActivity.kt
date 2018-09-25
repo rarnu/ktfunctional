@@ -6,6 +6,8 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
+import android.os.Message
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ScrollView
@@ -93,11 +95,9 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
     }
 
     private fun addConsoleLog(txt: String) {
-        runOnUiThread {
-            Handler().post {
-                tvConsole.append("$txt\n")
-                sv.fullScroll(ScrollView.FOCUS_DOWN)
-            }
+        runOnMainThread {
+            tvConsole.append("$txt\n")
+            sv.fullScroll(ScrollView.FOCUS_DOWN)
         }
     }
 
