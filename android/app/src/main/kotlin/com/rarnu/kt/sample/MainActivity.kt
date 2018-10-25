@@ -54,6 +54,7 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         showActionBack()
+        System.disableAndroidPNotes()
         actionBar?.title = "Kt.Functional"
 
         val adapter = MyAdapter(this, lstItem)
