@@ -33,6 +33,22 @@ fun runCommand(init: Command.() -> Unit): CommandResult {
     return CommandOperations.runCommand(c.commands, c.runAsRoot, c._progress, c._result)
 }
 
+fun runCommand(cmd: String, isRoot: Boolean = false): String {
+    var ret = ""
+    runCommand {
+        runAsRoot = isRoot
+        commands.add(cmd)
+        result { output, _ -> ret = output }
+    }
+    return ret
+}
+
+fun runCommandAsync(cmd: String, isRoot: Boolean = false, callback: (result: String) -> Unit) = runCommandAsync {
+    runAsRoot = isRoot
+    commands.add(cmd)
+    result { output, _ -> runOnMainThread { callback(output) } }
+}
+
 /**
  * Created by rarnu on 3/23/16.
  */

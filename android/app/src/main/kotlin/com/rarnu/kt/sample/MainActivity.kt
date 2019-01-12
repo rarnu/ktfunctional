@@ -5,9 +5,6 @@ import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.os.Message
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ScrollView
@@ -125,7 +122,8 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         httpAsync {
             url = HTTPURL
             method = HttpMethod.POST
-            postParam = mapOf("m" to "post", "pp" to "rarnupost")
+            postParam["m"] = "post"
+            postParam["pp"] = "rarnupost"
             onSuccess { code, text, _ ->
                 addConsoleLog("code: $code")
                 addConsoleLog("data: $text")
@@ -147,8 +145,9 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         httpAsync {
             url = HTTPURL
             method = HttpMethod.POST
-            postParam = mapOf("m" to "file", "fp" to "rarnufile")
-            fileParam = mapOf("file" to File(filesDir, "upload.txt").absolutePath)
+            postParam["m"] = "file"
+            postParam["fp"] = "rarnufile"
+            fileParam["file"] = File(filesDir, "upload.txt").absolutePath
             onSuccess { code, text, _ ->
                 addConsoleLog("code: $code")
                 addConsoleLog("data: $text")

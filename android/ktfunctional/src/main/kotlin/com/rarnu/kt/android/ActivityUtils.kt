@@ -21,14 +21,14 @@ abstract class PreferenceActivity : Activity() {
     abstract fun onPreparedPreference()
     private val frag = InnerFragment()
 
+    val manager = frag.preferenceManager
+    val screen = frag.preferenceScreen
+
     fun pref(resId: Int) = frag.findPreference(getString(resId))
     fun pref(key: String) = frag.findPreference(key)
 
     @Suppress("UNCHECKED_CAST")
     fun<T: Preference> findPref(resId: Int) = pref(resId) as T
-
-    fun manager() = frag.preferenceManager
-    fun screen() = frag.preferenceScreen
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

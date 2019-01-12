@@ -29,6 +29,20 @@ fun download(init: Download.() -> Unit) {
     DownloadOperations.downloadFile(d.url, d.localFile, d._progress)
 }
 
+fun download(fileUrl: String, savePath: String): Boolean {
+    var ret = false
+    download {
+        url = fileUrl
+        localFile = savePath
+        progress { state, _, _, error ->
+            if (state == DownloadState.WHAT_DOWNLOAD_FINISH) {
+                ret = error == null
+            }
+        }
+    }
+    return ret
+}
+
 private object DownloadOperations {
 
     fun downloadFile(address: String, localFile: String, handle: ((DownloadState, Int, Int, String?) -> Unit)?) {

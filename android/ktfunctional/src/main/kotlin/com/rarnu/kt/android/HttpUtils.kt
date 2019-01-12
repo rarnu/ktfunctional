@@ -18,8 +18,8 @@ class HttpUtils {
     var mimeType = "text/json"
     var data = ""
     var getParam = ""
-    var postParam: Map<String, String> = hashMapOf()
-    var fileParam: Map<String, String> = hashMapOf()
+    var postParam = mutableMapOf<String, String>()
+    var fileParam = mutableMapOf<String, String>()
     var cookie: CookieJar? = null
 
     internal var _success: (Int, String?, CookieJar?) -> Unit = { _, _, _ -> }
@@ -41,6 +41,24 @@ fun http(init: HttpUtils.() -> Unit): String? {
     h.init()
     val req = HttpOperations.buildRequest(h)
     return HttpOperations.executeForResult(req, h)
+}
+
+fun httpGet(getUrl: String) = http {
+    method = HttpMethod.GET
+    url = getUrl
+}
+
+fun httpPost(postUrl: String, params: Map<String, String>) = http {
+    method = HttpMethod.POST
+    postParam = params.toMutableMap()
+    url = postUrl
+}
+
+fun httpUploadFile(postUrl: String, params: Map<String, String>, files: Map<String, String>) = http {
+    method = HttpMethod.POST
+    postParam = params.toMutableMap()
+    fileParam = files.toMutableMap()
+    url = postUrl
 }
 
 private object HttpOperations {

@@ -13,7 +13,7 @@ class ZipUtils {
     var zipPath = ""
     var srcPath = ""
     var destPath = ""
-    val filterList = mutableListOf<String>()
+    var filterList: MutableList<String>? = mutableListOf()
     internal var _success: () -> Unit = { }
     internal var _error: (String?) -> Unit = { _ -> }
 
@@ -55,6 +55,17 @@ fun zip(init: ZipUtils.() -> Unit) {
     }
 }
 
+fun zip(destZipPath: String, srcFilePath: String, exceptFilterList: List<String>? = null): Boolean {
+    var ret = false
+    zip {
+        zipPath = destZipPath
+        srcPath = srcFilePath
+        filterList = exceptFilterList?.toMutableList()
+        success { ret = true }
+    }
+    return ret
+}
+
 /**
  * unzip and callback in a sub-thread
  * @param zipPath
@@ -82,12 +93,22 @@ fun unzip(init: ZipUtils.() -> Unit) {
     }
 }
 
+fun unzip(srcZipPath: String, destDirPath: String): Boolean {
+    var ret = false
+    unzip {
+        zipPath = srcZipPath
+        destPath = destDirPath
+        success { ret = true }
+    }
+    return ret
+}
+
 private object ZipOperations {
-    fun getFiles(dir: String, filterList: List<String>): MutableList<String> {
+    fun getFiles(dir: String, filterList: List<String>?): MutableList<String> {
         val lstFile = arrayListOf<String>()
         val file = File(dir)
         val files = file.listFiles()
-        files.filter { !filterList.contains(it.name) }.forEach {
+        files.filter { if (filterList != null) !filterList.contains(it.name) else true }.forEach {
             if (it.isDirectory) {
                 lstFile.add(it.absolutePath)
                 lstFile.addAll(getFiles(it.absolutePath, filterList))
@@ -124,7 +145,7 @@ private object ZipOperations {
     }
 
     @Throws(Exception::class)
-    fun zip(zipPath: String, dir: String, filterList: List<String>) {
+    fun zip(zipPath: String, dir: String, filterList: List<String>?) {
         val paths = getFiles(dir, filterList)
         compressFiles(paths.toTypedArray(), zipPath, dir)
     }
