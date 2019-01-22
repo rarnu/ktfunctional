@@ -3,6 +3,8 @@ package com.rarnu.kt.sample
 import android.app.Activity
 import android.os.Bundle
 import android.os.Handler
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
@@ -35,6 +37,21 @@ class AdapterActivity: Activity(), AdapterView.OnItemClickListener, AdapterView.
         }
         lvSample.onItemClickListener = this
         lvSample.onItemLongClickListener = this
+
+        edtFilter.addTextChangedListener(object: TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+                adapter.filter(edtFilter.text.toString())
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
+            }
+
+        })
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

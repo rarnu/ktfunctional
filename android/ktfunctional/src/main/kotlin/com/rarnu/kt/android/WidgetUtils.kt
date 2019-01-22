@@ -47,7 +47,7 @@ abstract class BaseAdapter<T, H>(ctx: Context, protected var list: MutableList<T
 
     protected val lock = Any()
     private var inflater: LayoutInflater = LayoutInflater.from(ctx)
-    protected lateinit var listFull: MutableList<T>
+    protected var listFull = list
     private var _filter = ArrayFilter()
     protected val context = ctx
 
@@ -137,7 +137,7 @@ abstract class BaseAdapter<T, H>(ctx: Context, protected var list: MutableList<T
         }
 
         override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
-            if (results != null) {
+            if (results?.values != null) {
                 list = results.values as MutableList<T>
                 if (results.count > 0) {
                     notifyDataSetChanged()

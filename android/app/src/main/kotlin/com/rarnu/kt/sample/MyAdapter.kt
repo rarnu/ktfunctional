@@ -13,7 +13,7 @@ class MyAdapter(ctx: Context, list: MutableList<String>) : BaseAdapter<String, M
 
     override fun getAdapterLayout() = R.layout.item_list
 
-    override fun getValueText(item: String) = ""
+    override fun getValueText(item: String) = item
 
     override fun newHolder(baseView: View) = MyAdapterHolder(baseView)
 

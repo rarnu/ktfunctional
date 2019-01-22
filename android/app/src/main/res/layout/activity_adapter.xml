@@ -3,11 +3,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+    <EditText
+            android:id="@+id/edtFilter"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
     <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/srlPulldown"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/sv">
+            android:layout_above="@+id/sv"
+            android:layout_below="@+id/edtFilter">
         <ListView
                 android:id="@+id/lvSample"
                 android:layout_width="match_parent"
