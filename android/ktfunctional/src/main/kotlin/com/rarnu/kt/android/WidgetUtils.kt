@@ -51,6 +51,12 @@ abstract class BaseAdapter<T, H>(ctx: Context, protected var list: MutableList<T
     private var _filter = ArrayFilter()
     protected val context = ctx
 
+    fun resStr(resId: Int): String? = context.resStr(resId)
+    fun resStr(resId: Int, vararg args: Any?) = context.resStr(resId, args)
+    fun resStrArray(resId: Int) = context.resStrArray(resId)
+    fun resColor(resId: Int) = context.resColor(resId)
+    fun resDrawable(resId: Int) = context.resDrawable(resId)
+
     open fun setNewList(list: MutableList<T>) {
         this.listFull = list
         this.list = list

@@ -8,10 +8,26 @@ import android.widget.FrameLayout
 import android.widget.RelativeLayout
 import android.app.Activity
 import android.preference.Preference
+import android.view.MenuItem
 
 fun Activity.showActionBack() {
     actionBar?.setDisplayOptions(0, ActionBar.DISPLAY_HOME_AS_UP)
     actionBar?.setDisplayHomeAsUpEnabled(true)
+}
+
+open class BackActivity: Activity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        showActionBack()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
 
 @Suppress("DEPRECATION")
@@ -51,5 +67,19 @@ abstract class PreferenceActivity : Activity() {
             (activity as PreferenceActivity).onPreparedPreference()
         }
     }
+}
 
+abstract class BackPreferenceActivity: PreferenceActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        showActionBack()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
