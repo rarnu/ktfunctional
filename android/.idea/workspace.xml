@@ -42,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
+            <state relative-caret-position="6510">
               <caret line="446" column="5" selection-start-line="446" selection-start-column="5" selection-end-line="446" selection-end-column="5" />
               <folding>
                 <element signature="e#29#445#0" expanded="true" />
@@ -63,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/OperatorExtension.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="195">
               <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
                 <element signature="e#30#89#0" expanded="true" />
@@ -122,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ActivityUtils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
+            <state relative-caret-position="345">
               <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#30#303#0" expanded="true" />
@@ -248,6 +248,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,7 +317,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -329,7 +329,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Develop/android-sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549460878783" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549461985900" />
     <property name="device.picker.selection" value="EMULATOR" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -549,11 +549,12 @@
       <workItem from="1548511435935" duration="353000" />
       <workItem from="1548511793357" duration="3218000" />
       <workItem from="1549459419864" duration="1429000" />
+      <workItem from="1549461974309" duration="67000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217246000" />
+    <option name="totallyTimeSpent" value="217313000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -593,7 +594,6 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32810968" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
-      <window_info anchor="right" id="JuliaSciView" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24973376" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -609,6 +609,7 @@
       <window_info anchor="right" id="Flutter Inspector" order="12" weight="0.32960597" />
       <window_info anchor="right" id="Flutter Outline" order="13" weight="0.32960597" />
       <window_info anchor="right" id="Maven" order="14" />
+      <window_info anchor="right" id="JuliaSciView" order="15" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.19914803" />
@@ -976,19 +977,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/AssetsUtils.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ActivityUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="6510">
+          <caret line="446" column="5" selection-start-line="446" selection-start-column="5" selection-end-line="446" selection-end-column="5" />
           <folding>
-            <element signature="e#30#303#0" expanded="true" />
+            <element signature="e#29#445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1000,6 +994,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/OperatorExtension.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#30#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1007,23 +1011,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/rarnu/kt/sample/MainActivity.kt">
+    <entry file="file://$PROJECT_DIR$/ktfunctional/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="446" column="5" selection-start-line="446" selection-start-column="5" selection-end-line="446" selection-end-column="5" />
-          <folding>
-            <element signature="e#29#445#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1033,20 +1026,28 @@
       </provider>
       <provider editor-type-id="android-manifest" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/OperatorExtension.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/ActivityUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
-            <element signature="e#30#89#0" expanded="true" />
+            <element signature="e#30#303#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ktfunctional/build.gradle">
+    <entry file="file://$PROJECT_DIR$/ktfunctional/src/main/kotlin/com/rarnu/kt/android/AssetsUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="570">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
         </state>
       </provider>
     </entry>
