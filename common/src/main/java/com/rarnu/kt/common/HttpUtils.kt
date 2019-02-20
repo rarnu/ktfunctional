@@ -1,3 +1,5 @@
+@file:Suppress("Duplicates")
+
 package com.rarnu.kt.common
 
 import okhttp3.*
@@ -18,9 +20,10 @@ class HttpUtils {
     var mimeType = "text/json"
     var data = ""
     var getParam = ""
-    var postParam: Map<String, String> = hashMapOf()
-    var fileParam: Map<String, String> = hashMapOf()
+    var postParam = mutableMapOf<String, String>()
+    var fileParam = mutableMapOf<String, String>()
     var cookie: CookieJar? = null
+    var headers = mutableMapOf<String, String>()
 
     internal var _success: (Int, String?, CookieJar?) -> Unit = { _, _, _ -> }
     internal var _fail: (Throwable?) -> Unit = {}
@@ -44,10 +47,15 @@ fun http(init: HttpUtils.() -> Unit): String? {
 }
 
 private object HttpOperations {
+
+    private fun Request.Builder.headers(map: MutableMap<String, String>) = this.headers(Headers.of(map))
+
     fun buildRequest(util: HttpUtils): Request {
         val req: Request
         when (util.method) {
-            HttpMethod.GET -> { req = Request.Builder().url("${util.url}?${util.getParam}").get().build() }
+            HttpMethod.GET -> {
+                req = Request.Builder().url("${util.url}?${util.getParam}").headers(util.headers).get().build()
+            }
             HttpMethod.POST -> {
                 var u = util.url
                 if (util.getParam != "") { u += "?${util.getParam}" }
@@ -60,7 +68,7 @@ private object HttpOperations {
                         buildPostFileParts(util.postParam, util.fileParam)
                     }
                 }
-                req = Request.Builder().url(u).post(body).build()
+                req = Request.Builder().url(u).headers(util.headers).post(body).build()
             }
             HttpMethod.PUT -> {
                 var u = util.url
@@ -74,11 +82,11 @@ private object HttpOperations {
                         buildPostFileParts(util.postParam, util.fileParam)
                     }
                 }
-                req = Request.Builder().url(u).put(body).build()
+                req = Request.Builder().url(u).headers(util.headers).put(body).build()
             }
             HttpMethod.DELETE -> {
                 val body = buildBody(util.postParam)
-                req = Request.Builder().url("${util.url}?${util.getParam}").delete(body).build()
+                req = Request.Builder().url("${util.url}?${util.getParam}").headers(util.headers).delete(body).build()
             }
         }
         return req
@@ -90,8 +98,8 @@ private object HttpOperations {
         val iterParam = params.keys.iterator()
         while (iterParam.hasNext()) {
             val key = iterParam.next()
-            val value = params[key]!!
-            builder.addFormDataPart(key, value)
+            val value = params[key]
+            builder.addFormDataPart(key, value!!)
         }
         val iterFile = files.keys.iterator()
         while (iterFile.hasNext()) {
@@ -111,8 +119,8 @@ private object HttpOperations {
         val iter = params.keys.iterator()
         while (iter.hasNext()) {
             val key = iter.next()
-            val value = params[key]!!
-            builder.add(key, value)
+            val value = params[key]
+            builder.add(key, value!!)
         }
         return builder.build()
     }

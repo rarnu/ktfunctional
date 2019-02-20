@@ -1,3 +1,5 @@
+@file:Suppress("Duplicates")
+
 package com.rarnu.kt.android
 
 import okhttp3.*
@@ -21,6 +23,7 @@ class HttpUtils {
     var postParam = mutableMapOf<String, String>()
     var fileParam = mutableMapOf<String, String>()
     var cookie: CookieJar? = null
+    var headers = mutableMapOf<String, String>()
 
     internal var _success: (Int, String?, CookieJar?) -> Unit = { _, _, _ -> }
     internal var _fail: (Throwable?) -> Unit = {}
@@ -50,22 +53,55 @@ fun httpGet(getUrl: String) = http {
 
 fun httpPost(postUrl: String, params: Map<String, String>) = http {
     method = HttpMethod.POST
-    postParam = params.toMutableMap()
+    postParam.putAll(params)
     url = postUrl
 }
 
 fun httpUploadFile(postUrl: String, params: Map<String, String>, files: Map<String, String>) = http {
     method = HttpMethod.POST
-    postParam = params.toMutableMap()
-    fileParam = files.toMutableMap()
+    postParam.putAll(params)
+    fileParam.putAll(files)
     url = postUrl
 }
 
+fun simpleHttpGet(getUrl: String): String {
+    var ret = ""
+    http {
+        url = getUrl
+        onSuccess { _, text, _ -> ret = text ?: "" }
+    }
+    return ret
+}
+
+fun simpleHttpPost(postUrl: String, params: Map<String, String>): String {
+    var ret = ""
+    http {
+        url = postUrl
+        postParam.putAll(params)
+        onSuccess { _, text, _ -> ret = text ?: "" }
+    }
+    return ret
+}
+
+fun simpleUploadFile(postUrl: String, params: Map<String, String>, files: Map<String, String>): String {
+    var ret = ""
+    http {
+        url = postUrl
+        postParam.putAll(params)
+        fileParam.putAll(files)
+        onSuccess { _, text, _ -> ret = text ?: "" }
+    }
+    return ret
+}
+
 private object HttpOperations {
+
+    private fun Request.Builder.headers(map: Map<String, String>) = this.headers(Headers.of(map))
+
     fun buildRequest(util: HttpUtils): Request {
         val req: Request
         when (util.method) {
-            HttpMethod.GET -> { req = Request.Builder().url("${util.url}?${util.getParam}").get().build() }
+            HttpMethod.GET -> { req = Request.Builder().url("${util.url}?${util.getParam}").headers(util.headers).get().build() }
             HttpMethod.POST -> {
                 var u = util.url
                 if (util.getParam != "") { u += "?${util.getParam}" }
@@ -78,7 +114,7 @@ private object HttpOperations {
                         buildPostFileParts(util.postParam, util.fileParam)
                     }
                 }
-                req = Request.Builder().url(u).post(body).build()
+                req = Request.Builder().url(u).headers(util.headers).post(body).build()
             }
             HttpMethod.PUT -> {
                 var u = util.url
@@ -92,11 +128,11 @@ private object HttpOperations {
                         buildPostFileParts(util.postParam, util.fileParam)
                     }
                 }
-                req = Request.Builder().url(u).put(body).build()
+                req = Request.Builder().url(u).headers(util.headers).put(body).build()
             }
             HttpMethod.DELETE -> {
                 val body = buildBody(util.postParam)
-                req = Request.Builder().url("${util.url}?${util.getParam}").delete(body).build()
+                req = Request.Builder().url("${util.url}?${util.getParam}").headers(util.headers).delete(body).build()
             }
         }
         return req
@@ -108,8 +144,8 @@ private object HttpOperations {
         val iterParam = params.keys.iterator()
         while (iterParam.hasNext()) {
             val key = iterParam.next()
-            val value = params[key]!!
-            builder.addFormDataPart(key, value)
+            val value = params[key]
+            builder.addFormDataPart(key, value!!)
         }
         val iterFile = files.keys.iterator()
         while (iterFile.hasNext()) {
@@ -129,8 +165,8 @@ private object HttpOperations {
         val iter = params.keys.iterator()
         while (iter.hasNext()) {
             val key = iter.next()
-            val value = params[key]!!
-            builder.add(key, value)
+            val value = params[key]
+            builder.add(key, value!!)
         }
         return builder.build()
     }

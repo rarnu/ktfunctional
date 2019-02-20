@@ -6,10 +6,8 @@ import javafx.scene.control.ListCell
 import javafx.scene.control.ListView
 import javafx.scene.layout.Background
 import javafx.scene.layout.BackgroundFill
-import javafx.scene.layout.Pane
 import javafx.scene.paint.Color
 import javafx.scene.text.Font
-
 
 val BUTTON_TEXT_COLOR = Color.color(0.0, 0.478431, 1.0)!!
 

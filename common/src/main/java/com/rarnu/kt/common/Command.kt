@@ -2,7 +2,6 @@ package com.rarnu.kt.common
 
 import java.io.BufferedReader
 import java.io.DataOutputStream
-import java.io.File
 import java.io.InputStreamReader
 import kotlin.concurrent.thread
 
@@ -11,10 +10,10 @@ enum class CommandProgressType { START, READLINE, READERROR, COMPLETE }
 class Command {
     var commands = mutableListOf<String>()
     var runAsRoot = false
+    var password = ""
 
     var _progress: (CommandProgressType, String) -> Unit = { _, _ -> }
     var _result: (String, String) -> Unit = { _, _ -> }
-
 
     fun progress(p: (type: CommandProgressType, value: String) -> Unit) {
         _progress = p
@@ -30,7 +29,7 @@ fun runCommandAsync(init: Command.() -> Unit) = thread { runCommand(init) }
 fun runCommand(init: Command.() -> Unit): CommandResult {
     val c = Command()
     c.init()
-    return CommandOperations.runCommand(c.commands, c.runAsRoot, c._progress, c._result)
+    return CommandOperations.runCommand(c.commands, c.runAsRoot, c.password, c._progress, c._result)
 }
 
 /**
@@ -38,11 +37,7 @@ fun runCommand(init: Command.() -> Unit): CommandResult {
  */
 internal object CommandOperations {
 
-    internal val rooted = arrayOf("/system/bin/su", "/system/xbin/su").any { File(it).exists() }
-
-    internal var busyboxInstalled = arrayOf("/system/xbin/busybox", "/system/bin/busybox").any { File(it).exists() }
-
-    fun runCommand(command: List<String>, root: Boolean, progress: (CommandProgressType, String) -> Unit, result: (String, String) -> Unit): CommandResult {
+    fun runCommand(command: MutableList<String>, root: Boolean, password: String, progress: (CommandProgressType, String) -> Unit, result: (String, String) -> Unit): CommandResult {
         var output = ""
         var outError = ""
         val process: Process
@@ -52,10 +47,10 @@ internal object CommandOperations {
         progress(CommandProgressType.START, "")
         try {
             if (root) {
-                process = Runtime.getRuntime().exec("su")
+                command.add(0, "sudo")
+                process = Runtime.getRuntime().exec(command.toTypedArray())
                 rootOs = DataOutputStream(process.outputStream)
-                command.forEach { rootOs.writeBytes("$it\n") }
-                rootOs.writeBytes("exit\n")
+                rootOs.writeBytes("$password\n")
                 rootOs.flush()
             } else {
                 process = Runtime.getRuntime().exec(command.toTypedArray())

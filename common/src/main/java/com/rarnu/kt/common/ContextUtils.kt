@@ -1,11 +1,13 @@
 package com.rarnu.kt.common
 
+import javafx.application.Platform
 import java.io.BufferedInputStream
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.lang.System
 import java.util.*
+import javax.swing.SwingUtilities
 
 fun readConfig(key: String, def: String) = ContextOperations.read(key, def)
 fun writeConfig(key: String, value: String) = ContextOperations.write(key, value)
@@ -17,6 +19,9 @@ fun readConfig(key: String, def: Long) = ContextOperations.read(key, def.toStrin
 fun writeConfig(key: String, value: Long) = ContextOperations.write(key, value.toString())
 fun readConfig(key: String, def: Boolean) = ContextOperations.read(key, def.toString()).toBoolean()
 fun writeConfig(key: String, value: Boolean) = ContextOperations.write(key, value.toString())
+
+fun fxMainThread(runnable: () -> Unit) = Platform.runLater { runnable() }
+fun swingMainThread(runnable: () -> Unit) = SwingUtilities.invokeLater { runnable() }
 
 private object ContextOperations {
 
