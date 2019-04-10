@@ -73,6 +73,26 @@
             android:layout_marginRight="8dip"
             android:layout_below="@+id/btn5"
             android:tag="6" />
+    <Button
+            android:id="@+id/btn7"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:text="Toast (Dark)"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_below="@+id/btn6"
+            android:tag="7" />
+    <Button
+            android:id="@+id/btn8"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:text="Toast (Light)"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_below="@+id/btn7"
+            android:tag="8" />
 
     <ScrollView
             android:id="@+id/sv"

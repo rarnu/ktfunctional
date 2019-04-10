@@ -1,13 +1,20 @@
 package com.rarnu.kt.sample
 
 import android.app.Activity
+import android.content.Context
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.view.MenuItem
 import android.view.View
 import android.widget.ScrollView
+import android.widget.TextView
+import android.widget.Toast
 import com.rarnu.kt.android.*
 import kotlinx.android.synthetic.main.activity_extension.*
+import android.graphics.drawable.GradientDrawable
+
+
 
 class ExtensionActivity: Activity(), View.OnClickListener {
 
@@ -27,6 +34,8 @@ class ExtensionActivity: Activity(), View.OnClickListener {
         btn4.setOnClickListener(this)
         btn5.setOnClickListener(this)
         btn6.setOnClickListener(this)
+        btn7.setOnClickListener(this)
+        btn8.setOnClickListener(this)
 
     }
 
@@ -65,7 +74,10 @@ class ExtensionActivity: Activity(), View.OnClickListener {
             4 -> alert("title", "message", "btn1", "btn2", "btn3") { which -> addConsoleLog("click $which") }
             5 -> alert("title", "message", "ok", "cancel", "input text", "") { which, text -> addConsoleLog("click: $which, text: $text") }
             6 -> alert("title", "message", "ok", "cancel", "account", "password", "", "") { which, text1, text2 -> addConsoleLog("click: $which, text1: $text1, text2: $text2") }
-
+            7 -> toast("This is a dark toast.")
+            8 -> toast("This is a light toast", dark = false)
         }
     }
+
+
 }

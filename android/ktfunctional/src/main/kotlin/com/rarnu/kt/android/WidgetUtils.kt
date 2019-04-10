@@ -5,7 +5,10 @@ package com.rarnu.kt.android
 import android.app.Activity
 import android.content.AsyncTaskLoader
 import android.content.Context
+import android.content.res.ColorStateList
 import android.database.Cursor
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
@@ -13,14 +16,12 @@ import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.*
 import android.widget.BaseAdapter
-import android.widget.Filter
-import android.widget.Filterable
-import android.widget.Toast
 
 fun String.toEditable(): Editable = Editable.Factory().newEditable(this)
 
-fun Context.toast(message: String) = Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+fun Context.toast(message: String, duration: Int = Toast.LENGTH_SHORT, dark: Boolean = true) = ExtendedToast.makeText(this, message, duration, dark).show()
 
 fun <T : View> Activity.v(resId: Int) = findViewById<T>(resId)
 
@@ -35,6 +36,13 @@ fun Context.resStrArray(resId: Int) = resources.getStringArray(resId)
 fun Context.resColor(resId: Int) = if (Build.VERSION.SDK_INT >= 23) { resources.getColor(resId, theme) } else { resources.getColor(resId) }
 
 fun Context.resDrawable(resId: Int) = if (Build.VERSION.SDK_INT >= 21) { resources.getDrawable(resId, theme) } else { resources.getDrawable(resId) }
+
+fun Context.attrColor(resId: Int): ColorStateList? {
+    val a = obtainStyledAttributes(intArrayOf(resId))
+    val color = a.getColorStateList(a.getIndex(0))
+    a.recycle()
+    return color
+}
 
 fun runOnMainThread(runnable: () -> Unit) = Handler(Looper.getMainLooper()).post { runnable() }
 
@@ -157,19 +165,51 @@ abstract class BaseAdapter<T, H>(ctx: Context, protected var list: MutableList<T
 }
 
 abstract class BaseClassLoader<T>(context: Context) : AsyncTaskLoader<T>(context) {
-    abstract override fun loadInBackground(): T?
+    abstract override fun loadInBackground(): T
     override fun onStartLoading() = forceLoad()
     override fun onStopLoading() {
         cancelLoad()
     }
-
     override fun onReset() = stopLoading()
 }
 
-abstract class BaseListLoader<T>(context: Context) : BaseClassLoader<MutableList<T>?>(context) {
-    abstract override fun loadInBackground(): MutableList<T>?
+abstract class BaseListLoader<T>(context: Context) : BaseClassLoader<List<T>>(context) {
+    abstract override fun loadInBackground(): List<T>
+}
+
+abstract class BaseMutableListLoader<T>(context: Context) : BaseClassLoader<MutableList<T>>(context) {
+    abstract override fun loadInBackground(): MutableList<T>
 }
 
 abstract class BaseCursorLoader(context: Context) : BaseClassLoader<Cursor>(context) {
-    abstract override fun loadInBackground(): Cursor?
+    abstract override fun loadInBackground(): Cursor
+}
+
+private class ExtendedToast private constructor(context: Context, text: String, duration: Int, isDark: Boolean) {
+    private var t: Toast
+    init {
+        val txt = TextView(context)
+        val gd = GradientDrawable()
+        if (isDark) {
+            gd.setColor(Color.argb(0xb0, 0x20, 0x20, 0x20))
+            txt.setTextColor(Color.WHITE)
+        } else {
+            gd.setColor(Color.argb(0xb0, 0xcc, 0xcc, 0xcc))
+            txt.setTextColor(Color.BLACK)
+        }
+        gd.cornerRadius = 5.dip2px().toFloat()
+        txt.background = gd
+        txt.setPadding(8.dip2px(), 8.dip2px(), 8.dip2px(), 8.dip2px())
+        txt.text = text
+        t = Toast(context)
+        t.duration = duration
+        t.view = txt
+    }
+
+    companion object {
+        fun makeText(context: Context, text: String, duration: Int, isDark: Boolean = true): ExtendedToast {
+            return ExtendedToast(context, text, duration, isDark)
+        }
+    }
+    fun show() = t.show()
 }

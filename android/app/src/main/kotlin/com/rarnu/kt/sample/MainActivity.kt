@@ -43,7 +43,8 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             "Adapter (...)",                // DONE
             "Preference (...)",             // DONE
             "Command (...)",                // DONE
-            "Regular Expression"
+            "Regular Expression",           // DONE
+            "PackageParser (...)"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -89,6 +90,7 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             21 -> jumpPreference()
             22 -> jumpCommand()
             23 -> sampleRegEx()
+            24 -> jumpPackageParser()
         }
     }
 
@@ -444,5 +446,12 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         val e1 = RegExUtils.isEmail("rarnu1985@gmail.com")
         val e2 = RegExUtils.isEmail("abcdefg.com")
         addConsoleLog("e1: $e1, e2: $e2")
+    }
+
+    // ===========================================================
+    // PACKAGEPARSER
+    // ===========================================================
+    private fun jumpPackageParser() {
+        startActivity(Intent(this, PackageParserActivity::class.java))
     }
 }

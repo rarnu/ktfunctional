@@ -4,13 +4,13 @@ a functional library for kotlin(android/jvm)
 #### Using in Android
 
 ```
-compile "com.github.rarnu:ktfunctional:0.8.1"
+implementation "com.github.rarnu:ktfunctional:0.8.5"
 ```
 
 #### Using in Kotlin Project
 
 ```
-add dependence of common-0.8.0.jar
+implementation "com.github.rarnu:common:0.8.0"
 ```
 
 #### Try this
