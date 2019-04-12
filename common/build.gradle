@@ -35,7 +35,7 @@ jar {
 }
 
 group = 'com.github.rarnu'
-version = '0.8.0'
+version = '0.8.1'
 
 signing {
     sign configurations.archives

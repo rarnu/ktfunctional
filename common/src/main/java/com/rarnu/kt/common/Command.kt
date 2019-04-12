@@ -3,6 +3,8 @@ package com.rarnu.kt.common
 import java.io.BufferedReader
 import java.io.DataOutputStream
 import java.io.InputStreamReader
+import java.lang.System
+import java.util.concurrent.TimeUnit
 import kotlin.concurrent.thread
 
 enum class CommandProgressType { START, READLINE, READERROR, COMPLETE }
@@ -11,6 +13,7 @@ class Command {
     var commands = mutableListOf<String>()
     var runAsRoot = false
     var password = ""
+    var timeout = 3000L
 
     var _progress: (CommandProgressType, String) -> Unit = { _, _ -> }
     var _result: (String, String) -> Unit = { _, _ -> }
@@ -29,7 +32,7 @@ fun runCommandAsync(init: Command.() -> Unit) = thread { runCommand(init) }
 fun runCommand(init: Command.() -> Unit): CommandResult {
     val c = Command()
     c.init()
-    return CommandOperations.runCommand(c.commands, c.runAsRoot, c.password, c._progress, c._result)
+    return CommandOperations.runCommand(c.commands, c.runAsRoot, c.password, c.timeout, c._progress, c._result)
 }
 
 /**
@@ -37,10 +40,10 @@ fun runCommand(init: Command.() -> Unit): CommandResult {
  */
 internal object CommandOperations {
 
-    fun runCommand(command: MutableList<String>, root: Boolean, password: String, progress: (CommandProgressType, String) -> Unit, result: (String, String) -> Unit): CommandResult {
+    fun runCommand(command: MutableList<String>, root: Boolean, password: String, timeout: Long, progress: (CommandProgressType, String) -> Unit, result: (String, String) -> Unit): CommandResult {
         var output = ""
         var outError = ""
-        val process: Process
+        var process: Process? = null
         var rootOs: DataOutputStream? = null
         var procOutOs: BufferedReader? = null
         var procErrOs: BufferedReader? = null
@@ -59,26 +62,47 @@ internal object CommandOperations {
             procErrOs = BufferedReader(InputStreamReader(process.errorStream))
             val outStr = StringBuffer()
             val errStr = StringBuffer()
+
             var line: String?
+            val start = System.currentTimeMillis()
             while (true) {
-                line = procOutOs.readLine()
-                if (line != null) {
-                    outStr.append("$line\n")
-                    progress(CommandProgressType.READLINE, line)
-                } else {
+                if (procOutOs.ready()) {
+                    line = procOutOs.readLine()
+                    println(line)
+                    if (line != null) {
+                        outStr.append("$line\n")
+                        progress(CommandProgressType.READLINE, line)
+                        continue
+                    }
+                }
+                if (procErrOs.ready()) {
+                    line = procErrOs.readLine()
+                    if (line != null) {
+                        errStr.append("$line\n")
+                        progress(CommandProgressType.READERROR, line)
+                        continue
+                    }
+                }
+
+                if (process != null) {
+                    try {
+                        process.exitValue()
+                        break
+                    } catch (e: Exception) {
+                    }
+                }
+                if (System.currentTimeMillis() - start > timeout) {
+                    errStr.append("Timeout\n")
                     break
                 }
-            }
-            while (true) {
-                line = procErrOs.readLine()
-                if (line != null) {
-                    errStr.append("$line\n")
-                    progress(CommandProgressType.READERROR, line)
-                } else {
-                    break
+                try {
+                    TimeUnit.MILLISECONDS.sleep(500)
+                } catch (e: Exception) {
                 }
+
             }
-            process.waitFor()
+
+            // process.waitFor()
             output = outStr.toString().trim()
             outError = errStr.toString().trim()
         } catch (e: Exception) {
@@ -86,15 +110,21 @@ internal object CommandOperations {
                 outError = e.message!!
             }
         } finally {
-            rootOs?.close()
+            if (root) { rootOs?.close() }
             procOutOs?.close()
             procErrOs?.close()
+            if (process != null) {
+                try {
+                    process.destroy()
+                } catch (e: Throwable) {
+
+                }
+            }
         }
         progress(CommandProgressType.COMPLETE, "")
         result(output, outError)
         return CommandResult(output, outError)
     }
-
 }
 
 data class CommandResult(val output: String, val error: String)
