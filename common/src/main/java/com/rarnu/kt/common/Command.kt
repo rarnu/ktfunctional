@@ -2,6 +2,7 @@ package com.rarnu.kt.common
 
 import java.io.BufferedReader
 import java.io.DataOutputStream
+import java.io.File
 import java.io.InputStreamReader
 import java.lang.System
 import java.util.concurrent.TimeUnit
@@ -14,6 +15,7 @@ class Command {
     var runAsRoot = false
     var password = ""
     var timeout = 3000L
+    var workDir: String? = null
 
     var _progress: (CommandProgressType, String) -> Unit = { _, _ -> }
     var _result: (String, String) -> Unit = { _, _ -> }
@@ -32,7 +34,7 @@ fun runCommandAsync(init: Command.() -> Unit) = thread { runCommand(init) }
 fun runCommand(init: Command.() -> Unit): CommandResult {
     val c = Command()
     c.init()
-    return CommandOperations.runCommand(c.commands, c.runAsRoot, c.password, c.timeout, c._progress, c._result)
+    return CommandOperations.runCommand(c.commands, c.runAsRoot, c.password, c.workDir, c.timeout, c._progress, c._result)
 }
 
 /**
@@ -40,7 +42,7 @@ fun runCommand(init: Command.() -> Unit): CommandResult {
  */
 internal object CommandOperations {
 
-    fun runCommand(command: MutableList<String>, root: Boolean, password: String, timeout: Long, progress: (CommandProgressType, String) -> Unit, result: (String, String) -> Unit): CommandResult {
+    fun runCommand(command: MutableList<String>, root: Boolean, password: String, workDir: String?, timeout: Long, progress: (CommandProgressType, String) -> Unit, result: (String, String) -> Unit): CommandResult {
         var output = ""
         var outError = ""
         var process: Process? = null
@@ -51,12 +53,12 @@ internal object CommandOperations {
         try {
             if (root) {
                 command.add(0, "sudo")
-                process = Runtime.getRuntime().exec(command.toTypedArray())
+                process = Runtime.getRuntime().exec(command.toTypedArray(), null, if (workDir == null) null else File(workDir))
                 rootOs = DataOutputStream(process.outputStream)
                 rootOs.writeBytes("$password\n")
                 rootOs.flush()
             } else {
-                process = Runtime.getRuntime().exec(command.toTypedArray())
+                process = Runtime.getRuntime().exec(command.toTypedArray(), null, if (workDir == null) null else File(workDir))
             }
             procOutOs = BufferedReader(InputStreamReader(process.inputStream))
             procErrOs = BufferedReader(InputStreamReader(process.errorStream))
@@ -68,7 +70,6 @@ internal object CommandOperations {
             while (true) {
                 if (procOutOs.ready()) {
                     line = procOutOs.readLine()
-                    println(line)
                     if (line != null) {
                         outStr.append("$line\n")
                         progress(CommandProgressType.READLINE, line)

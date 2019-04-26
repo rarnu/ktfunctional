@@ -102,6 +102,17 @@ fun fileWriteText(file: File, text: String): Boolean {
     return ret
 }
 
+fun fileWalk(basePath: String, callback:(File) -> Unit) {
+    val f = File(basePath)
+    f.listFiles().forEach {
+        if (it.isDirectory) {
+            fileWalk(it.absolutePath, callback)
+        } else if (it.isFile) {
+            callback(it)
+        }
+    }
+}
+
 private object FileOperations {
 
     private const val ERROR_SRC = "Src Type Error"
