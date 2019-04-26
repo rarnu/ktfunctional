@@ -10,7 +10,7 @@ implementation "com.github.rarnu:ktfunctional:0.8.5"
 #### Using in Kotlin Project
 
 ```
-implementation "com.github.rarnu:common:0.8.0"
+implementation "com.github.rarnu:common:0.8.2"
 ```
 
 #### Try this
