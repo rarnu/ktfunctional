@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.rarnu:common:0.8.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rarnu/common/0.8.2/625b78dc306348f83f5a3210fa0c095c3016a446/common-0.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rarnu/common/0.8.2/285598fa7a3bc884d1f75c99b8512ba4b2b2ed4b/common-0.8.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

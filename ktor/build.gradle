@@ -1,0 +1,113 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.20'
+}
+
+group = 'com.github.rarnu'
+version = '0.1.0'
+
+apply plugin: 'kotlin'
+apply plugin: 'java-library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+repositories {
+    google()
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation "io.ktor:ktor-server-core:$ktor_version"
+    implementation "com.github.rarnu:common:0.8.2"
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions.freeCompilerArgs += ["-Xuse-experimental=kotlin.Experimental"]
+}
+
+
+jar {
+    from {
+        configurations.runtime.collect{zipTree(it)}
+    }
+    manifest {
+    }
+}
+
+group = 'com.github.rarnu'
+version = '0.1.0'
+
+signing {
+    sign configurations.archives
+}
+
+javadoc {
+    options {
+        encoding "UTF-8"
+        charSet 'UTF-8'
+        author true
+        version true
+        links "http://docs.oracle.com/javase/7/docs/api"
+    }
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.java.srcDirs
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            beforeDeployment {
+                MavenDeployment deployment -> signing.signPom(deployment)
+            }
+
+            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+            snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+            pom.project {
+                name project.name
+                packaging 'aar'
+                description 'KtFunctional'
+                url 'https://github.com/rarnu/ktfunctional'
+
+                scm {
+                    url 'scm:git@github.com:rarnu/ktfunctional.git'
+                    connection 'scm:git@github.com:rarnu/ktfunctional.git'
+                    developerConnection 'git@github.com:rarnu/ktfunctional.git'
+                }
+
+                licenses {
+                    license {
+                        name 'GNU General Public License v3.0'
+                        url 'https://github.com/rarnu/ktfunctional/blob/master/LICENSE'
+                        distribution 'rarnu'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'rarnu'
+                        name 'rarnu'
+                        email '123909566@qq.com'
+                    }
+                }
+            }
+        }
+    }
+}

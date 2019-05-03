@@ -1,5 +1,6 @@
 # ktfunctional
-a functional library for kotlin(android/jvm)
+
+a functional library for kotlin
 
 #### Using in Android
 
@@ -10,7 +11,13 @@ implementation "com.github.rarnu:ktfunctional:0.8.5"
 #### Using in Kotlin Project
 
 ```
-implementation "com.github.rarnu:common:0.8.2"
+compile "com.github.rarnu:common:0.8.2"
+```
+
+#### Using in Ktor
+
+```
+compile "com.github.rarnu:kor:0.1.0"
 ```
 
 #### Try this

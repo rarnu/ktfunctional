@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.kotlinx:atomicfu-common:0.12.2" type="kotlin.common">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-common/0.12.2/2b9f5910aebb4a0e5a611f0b2fda527d5ebaec5c/atomicfu-common-0.12.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-common/0.12.2/eadb904dc952141abd1ae26bf21ad19d279fbf90/atomicfu-common-0.12.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
