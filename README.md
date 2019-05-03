@@ -17,7 +17,7 @@ compile "com.github.rarnu:common:0.8.2"
 #### Using in Ktor
 
 ```
-compile "com.github.rarnu:kor:0.1.0"
+compile "com.github.rarnu:ktor:0.1.0"
 ```
 
 #### Try this
