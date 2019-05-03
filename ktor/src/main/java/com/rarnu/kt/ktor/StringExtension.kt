@@ -41,3 +41,32 @@ fun String.hash(alg: String): String =
     } catch (e: Exception) {
         ""
     }
+
+fun String.asFileWriteText(text: String): File? {
+    val dir = this.substringBeforeLast(File.separator)
+    val dfile = File(dir)
+    if (!dfile.exists()) {
+        dfile.mkdirs()
+    }
+    val ffile = File(this)
+    ffile.writeText(text)
+    return ffile
+}
+
+fun String.asFileReadText(): String? {
+    val ffile = File(this)
+    return if (ffile.exists()) {
+        ffile.readText()
+    } else {
+        null
+    }
+}
+
+fun String.asFileMkdirs() {
+    val dir = File(this)
+    if (!dir.exists()) {
+        dir.mkdirs()
+    }
+}
+
+fun String.asFile() = File(this)

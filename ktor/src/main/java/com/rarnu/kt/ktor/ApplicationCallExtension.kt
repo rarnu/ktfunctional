@@ -11,6 +11,7 @@ import java.nio.file.Paths
 import java.util.jar.JarFile
 
 fun ApplicationCall.config(cfg: String): String = application.config(cfg)
+fun ApplicationCall.ifcfg(condition: Boolean, key1: String, key2: String) = if (condition) config(key1) else config(key2)
 
 @UseExperimental(KtorExperimentalAPI::class)
 fun ApplicationCall.resolveFileContent(
