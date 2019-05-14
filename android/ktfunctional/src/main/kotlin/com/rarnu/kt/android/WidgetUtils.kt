@@ -18,6 +18,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import android.widget.BaseAdapter
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 fun String.toEditable(): Editable = Editable.Factory().newEditable(this)
 
@@ -45,6 +48,10 @@ fun Context.attrColor(resId: Int): ColorStateList? {
 }
 
 fun runOnMainThread(runnable: () -> Unit) = Handler(Looper.getMainLooper()).post { runnable() }
+
+fun coroutine(block: suspend () -> Unit) { CoroutineScope(Dispatchers.IO).launch { block() } }
+fun coroutineMain(block: suspend () -> Unit) { CoroutineScope(Dispatchers.Main).launch { block() } }
+
 
 /**
  * T: Base Type in Adapter

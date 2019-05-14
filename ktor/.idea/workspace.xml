@@ -2,11 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd18a564-80db-4d37-94a9-3c526520bef9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_8_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__com_squareup_okio_okio_1_13_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_70_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_2_70_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/WidgetUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/ktfunctional/src/main/kotlin/com/rarnu/kt/android/WidgetUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/src/main/java/com/rarnu/kt/common/ContextUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../common/src/main/java/com/rarnu/kt/common/ContextUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/ApplicationCallExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/ApplicationCallExtension.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/ApplicationExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/ApplicationExtension.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/StringExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/StringExtension.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -16,6 +36,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -73,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="419">
+              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -88,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/ApplicationCallExtension.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding>
                 <element signature="e#91#326#0" expanded="true" />
               </folding>
@@ -99,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/SystemExtension.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="81">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -108,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/StringExtension.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="69" column="1" lean-forward="true" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+            <state relative-caret-position="1088">
+              <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -127,7 +152,7 @@
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-server-core/1.1.3/587ea9419d38a49f685da3d81db7a083c89d559/ktor-server-core-1.1.3-sources.jar!/jvmMain/io/ktor/application/Application.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -147,7 +172,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/PipelineContextExtension.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="257">
               <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="e#27#314#0" expanded="true" />
@@ -159,7 +184,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/ResultSetExtension.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
+            <state relative-caret-position="463">
               <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
             </state>
           </provider>
@@ -233,6 +258,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,8 +306,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -406,11 +431,13 @@
       <workItem from="1556866640127" duration="4705000" />
       <workItem from="1556882473661" duration="1657000" />
       <workItem from="1556885803437" duration="1359000" />
+      <workItem from="1557819865696" duration="13000" />
+      <workItem from="1557821502745" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36010000" />
+    <option name="totallyTimeSpent" value="36047000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,7 +452,7 @@
     <frame x="0" y="23" width="1920" height="1112" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33422175" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34168443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -440,7 +467,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32768923" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32768923" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32768923" />
@@ -602,30 +629,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/DatabaseExension.kt">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="419">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/ApplicationCallExtension.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding>
-            <element signature="e#27#122#0" expanded="true" />
+            <element signature="e#91#326#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/PipelineContextExtension.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/SystemExtension.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="e#27#314#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="81">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/ResultSetExtension.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/StringExtension.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="1088">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -639,41 +673,34 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-server-core/1.1.3/587ea9419d38a49f685da3d81db7a083c89d559/ktor-server-core-1.1.3-sources.jar!/jvmMain/io/ktor/application/Application.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/ApplicationCallExtension.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/DatabaseExension.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        <state relative-caret-position="304">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#91#326#0" expanded="true" />
+            <element signature="e#27#122#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/SystemExtension.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/PipelineContextExtension.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="257">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="e#27#314#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/StringExtension.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rarnu/kt/ktor/ResultSetExtension.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="69" column="1" lean-forward="true" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="463">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -12,12 +12,18 @@ android {
     lintOptions {
         abortOnError false
     }
+
+    packagingOptions {
+        exclude 'META-INF/kotlinx-io.kotlin_module'
+        exclude 'META-INF/atomicfu.kotlin_module'
+        exclude 'META-INF/kotlinx-coroutines-io.kotlin_module'
+        exclude 'META-INF/kotlinx-coroutines-core.kotlin_module'
+    }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':ktfunctional')
-    // compile "com.github.rarnu:ktfunctional:0.7.2"
     implementation 'com.android.support:swiperefreshlayout:28.0.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }

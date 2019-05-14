@@ -5,13 +5,13 @@ a functional library for kotlin
 #### Using in Android
 
 ```
-implementation "com.github.rarnu:ktfunctional:0.8.5"
+implementation "com.github.rarnu:ktfunctional:0.9.0"
 ```
 
 #### Using in Kotlin Project
 
 ```
-compile "com.github.rarnu:common:0.8.2"
+compile "com.github.rarnu:common:0.9.0"
 ```
 
 #### Using in Ktor

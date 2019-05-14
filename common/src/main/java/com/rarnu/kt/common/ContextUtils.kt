@@ -1,6 +1,9 @@
 package com.rarnu.kt.common
 
 import javafx.application.Platform
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.io.BufferedInputStream
 import java.io.File
 import java.io.FileInputStream
@@ -22,6 +25,10 @@ fun writeConfig(key: String, value: Boolean) = ContextOperations.write(key, valu
 
 fun fxMainThread(runnable: () -> Unit) = Platform.runLater { runnable() }
 fun swingMainThread(runnable: () -> Unit) = SwingUtilities.invokeLater { runnable() }
+
+fun coroutine(block: suspend () -> Unit) { CoroutineScope(Dispatchers.IO).launch { block() } }
+fun coroutineMain(block: suspend () -> Unit) { CoroutineScope(Dispatchers.Main).launch { block() } }
+
 
 private object ContextOperations {
 
