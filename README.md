@@ -11,13 +11,13 @@ implementation "com.github.rarnu:ktfunctional:0.9.0"
 #### Using in Kotlin Project
 
 ```
-compile "com.github.rarnu:common:0.9.0"
+compile "com.github.rarnu:common:0.9.1"
 ```
 
 #### Using in Ktor
 
 ```
-compile "com.github.rarnu:ktor:0.1.3"
+compile "com.github.rarnu:ktor:0.2.0"
 ```
 
 - - -

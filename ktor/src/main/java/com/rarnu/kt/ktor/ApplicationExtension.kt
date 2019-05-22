@@ -37,13 +37,15 @@ fun Application.resourcePath(resourcePackage: String? = null): File? {
 inline val Application.db: DB get() = DB(this)
 inline val Application.conn: Connection get() = db.conn()
 
-inline fun <reified T: Any> Application.installPlugin(sessionIdentifier: String = "Session", headers: Map<String, String>? = null, init:() -> Unit) {
+inline fun <reified T: Any> Application.installPlugin(useCompress: Boolean = false, sessionIdentifier: String = "Session", headers: Map<String, String>? = null, init:() -> Unit) {
     install(Sessions) { cookie<T>(sessionIdentifier) { cookie.extensions["SameSite"] = "lax" } }
-    install(Compression) {
-        gzip { priority = 1.0 }
-        deflate {
-            priority = 10.0
-            minimumSize(1024)
+    if (useCompress) {
+        install(Compression) {
+            gzip { priority = 1.0 }
+            deflate {
+                priority = 10.0
+                minimumSize(1024)
+            }
         }
     }
     install(DefaultHeaders) { headers?.forEach { t, u -> header(t, u) } }
